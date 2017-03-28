@@ -1,0 +1,10 @@
+{% extends '../../layouts/page.njk' %}
+
+{% block main %}
+<p>Here is some content.</p>
+<script>
+Boot.waitFor('polyfill-service build-service', function () {
+  console.log('yup!');
+});
+</script>
+{% endblock %}

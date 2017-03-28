@@ -1,0 +1,15 @@
+{
+  "name": "none",
+  "dependencies": {
+    "o-header": "^6.14.1",
+    "o-fonts": "^2.2.0",
+    "o-footer": "^5.4.0",
+    "o-grid": "^4.3.1",
+    "o-typography": "^4.3.3",
+    "o-loading": "^1.0.0",
+    "o-teaser": "^1.11.2",
+    "o-teaser-collection": "^1.1.1",
+    "o-hoverable": "^3.1.0",
+    "n-ui-foundations": "^1.1.0"
+  }
+}

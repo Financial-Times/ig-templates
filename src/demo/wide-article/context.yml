@@ -1,0 +1,19 @@
+headline: David Cameron ‘lobbied on behalf of Uber’ in London
+
+standfirst: Ex-PM said to have urged Boris Johnson, then London mayor, to drop tough regulations
+
+topic:
+  url: https://www.ft.com/french-presidential-election
+  name: French presidential election
+
+image: http://com.ft.imagepublish.prod.s3.amazonaws.com/c8a4f114-1313-11e7-b0c1-37e417ee6c76
+
+byline:
+  -
+    name: Jim Pickard
+    url: https://www.ft.com/stream/authorsId/Q0ItMDAwMDgzNQ==-QXV0aG9ycw==
+  -
+    name: Martin Stabe
+    url: https://www.ft.com/martin-stabe
+
+environment: development
