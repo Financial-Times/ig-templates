@@ -2,13 +2,16 @@
   "name": "ft-graphics-ui",
   "version": "0.0.0",
   "dependencies": {
+    "clean-css": "^4.0.10",
     "d3-time-format": "^2.0.5",
+    "flow-bin": "^0.43.0",
     "lodash": "^4.17.4",
     "markdown-it": "^8.3.1"
   },
   "devDependencies": {
     "axios": "^0.15.3",
     "babel-eslint": "^7.2.1",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "bluebird": "^3.5.0",
     "bower": "^1.8.0",
     "eslint": "^3.18.0",
@@ -21,6 +24,7 @@
     "exhibit": "^0.11.0",
     "exhibit-directory": "^0.11.0",
     "exhibit-plugin-babel": "^0.11.0",
+    "exhibit-plugin-sass": "^0.11.0",
     "exhibit-plugin-serve": "^0.11.0",
     "exhibit-plugin-yaml": "^0.11.0",
     "glob-promise": "^3.1.0",
@@ -28,8 +32,6 @@
     "nunjucks": "^3.0.0",
     "trip": "^1.0.3"
   },
-  "jsnext:main": "src/lib",
   "main": "dist/lib",
-  "module": "src/lib",
   "repository": "financial-times/ft-graphics-ui"
 }

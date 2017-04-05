@@ -1,0 +1,13 @@
+// hide certain things until after they've been js-enhanced
+
+.o-header__drawer:not([data-o-header-drawer--js]) {
+  display: none;
+}
+
+.o-header:not([data-o-header--js]) {
+  .o-header__search,
+  .o-header__top-link--menu,
+  .o-header__top-link--search {
+    display: none;
+  }
+}

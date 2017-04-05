@@ -1,0 +1,80 @@
+{% import '../macros.njk' as macros %}
+{% set criticalCSS %}{% include '../styles/regular-article.css' %}{% endset %}
+
+{% extends './page.njk' %}
+
+{% block main %}
+  <article class="graphics-article">
+
+    <header class="graphics-article__topper">
+      <div class="o-grid-container">
+        <div class="o-grid-row">
+
+          <div class="graphics-article__header" data-o-grid-colspan="12 L8 XL7 XLoffset1">
+            {% block articleHeader %}
+            {% include '../partials/article-header.njk' %}
+            {% endblock %}
+          </div>
+
+          {% block headerAside %}
+          {% if readNext %}
+          <aside class="graphics-article__header-aside" data-o-grid-colspan="hide L4 XL3 XLoffset1">
+            {% if readNext.kicker %}
+            <div class="standalone-teaser-heading">{{ readNext.kicker }}</div>
+            {% endif %}
+
+            <div class="o-teaser o-teaser--opinion o-teaser--article o-teaser--verify-syndicatable" data-o-component="o-teaser" data-trackable="teaser">
+              <div class="o-teaser__content">
+                {% if readNext.topic %}
+                <div class="o-teaser__meta">
+                  <a href="{{ readNext.topic.url | resolveURL }}" class="o-teaser__tag" data-trackable="primary-tag">
+                    <span>Kevin Rudd</span>
+                  </a>
+                </div>
+                {% endif %}
+
+                <div class="o-teaser__heading js-teaser-heading">
+                  <a href="/content/3c62a276-1941-11e7-9c35-0dd2cb31823a" class="js-teaser-heading-link" data-trackable="main-link">
+                  {{ readNext.headline }}
+                </a>
+                </div>
+              </div>
+            </div>
+
+					</aside>
+          {% endif %}
+          {% endblock %}
+
+        </div>
+      </div>
+    </header>
+
+    <div class="graphics-article__content">
+      <div class="o-grid-container">
+        <div class="o-grid-row">
+          <div data-o-grid-colspan="12 L8 XL7 XLoffset1">
+            {% block leadImage %}
+            {% if leadImage %}
+            {{ macros.contentImage(leadImage.url, leadImage.alt, leadImage.ratio) }}
+            {% endif %}
+            {% endblock %}
+
+
+            <div class="graphics-article__share-bar" data-trackable="share | top">
+              {% include '../partials/share-links.njk' %}
+            </div>
+
+            <p>CONTENT</p>
+
+            <p>stuff</p>
+
+            {% block articleBody %}{% endblock %}
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </article>
+
+{% endblock %}

@@ -1,8 +1,19 @@
 import path from 'path';
+// import baseContext from '../defaults.json'; // eslint-disable-line import/no-unresolved
+import setupEnv from './setupEnv';
+// import validateContext from './validateContext';
+import * as filters from './filters';
+import * as globals from './globals';
 
-export setup from './setup';
-export * as filters from './filters';
-export * as globals from './globals';
+// Object.freeze(baseContext);
 
-/** For creating a custom Nunjucks loader */
-export const searchPath = path.resolve(__dirname, '..');
+const searchPath = path.resolve(__dirname, '..');
+
+export {
+  // baseContext,
+  setupEnv,
+  filters,
+  globals,
+  searchPath,
+  // validateContext,
+};

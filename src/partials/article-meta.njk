@@ -1,0 +1,26 @@
+{% if anyExist(publishedDate, byline) %}
+<p>
+  {% if publishedDate %}
+  <time class="article__timestamp o-date o-typography-timestamp"
+          data-o-component="o-date" datetime="{{ publishedDate | isoDate }}"
+          itemprop="datePublished" content="{{ publishedDate | isoDate }}"
+          data-o-date-js>{{ publishedDate | formatTime }}</time>
+  {% endif %}
+  {% if byline %}
+  &#32;<span class="article__byline">by&nbsp;
+  {% if byline.authors %}
+    {% for author in byline.authors %}
+      {{ " and " if not loop.first and loop.last else (", " if not loop.first else "") }}
+      {% if author.url %}
+        <a href="{{ author.url }}" class="o-typography-link-topic o-typography-link-topic--small" itemprop="author">{{ author.name }}</a>
+      {% else %}
+        {{ author.name }}
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    {{ byline | inlineMarkdown }}
+  {% endif %}
+  </span>
+  {% endif %}
+</p>
+{% endif %}

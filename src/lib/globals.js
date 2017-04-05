@@ -24,11 +24,20 @@ export const defaultOrigamiModules = (() => {
   );
 
   const bowerDeps = JSON.parse(bowerJSON).dependencies;
-  const ftModules = _.pickBy(bowerDeps, (value, key) => /[on]-/.test(key));
 
-  return {
-    ...ftModules,
-  };
+  return _.pick(bowerDeps, [
+    'o-header',
+    // 'o-fonts',
+    // 'o-footer',
+    'o-grid',
+    'o-typography',
+    // 'o-loading',
+    // 'o-teaser',
+    // 'o-teaser-collection',
+    'o-hoverable',
+    'n-ui-foundations',
+    'o-comment-count',
+  ]);
 })();
 
 /**
@@ -42,4 +51,17 @@ export {
   Number,
   Object,
   _,
+  encodeURIComponent,
+};
+
+export const assert = (object, message = 'Assertion failed') => {
+  if (!object) throw new Error(message);
+};
+
+export const anyExist = (...items) => items.some(item => item);
+
+export const articleContentWidths = {
+  default: 'calc(100% - 20px)',
+  L: '620px',
+  XL: '664.16px', // not sure what calculation is
 };

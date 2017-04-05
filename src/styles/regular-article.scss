@@ -1,0 +1,120 @@
+// set up fonts BEFORE n-ui-foundations, so we can suppress fonts we don't need
+@import './typography';
+
+@import 'n-ui-foundations/main';
+
+// n-ui-foundations requires us to declare any offset rules we want to use
+@include nUiGridOffset('XL', 1);
+
+$o-header-is-silent: false;
+@import 'o-header/main';
+
+$o-footer-is-silent: false;
+@import 'o-footer/main';
+
+$o-share-is-silent: false;
+@import 'o-share/main';
+
+$o-teaser-is-silent: false;
+@import 'o-teaser/main';
+
+@import './loading-hide';
+
+.graphics-article {
+  &__topper {
+    margin-top: 10px;
+    // outline: 1px solid blue;
+  }
+  &__header {}
+  &__header-aside {
+    // outline: 1px solid red;
+  }
+
+  .standalone-teaser-heading {
+    font-size: 18px;
+    line-height: 20px;
+    -webkit-font-smoothing: antialiased;
+    margin: 0 0 20px;
+    font-weight: 600;
+    color: #000;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 60px;
+      margin-top: 5px;
+      border-bottom: 4px solid;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+
+  .o-typography-link-topic {
+    font-size: 16px;
+    line-height: 30px;
+    border-bottom-color: transparent;
+    &:hover { border-bottom-color: currentColor; }
+  }
+
+  &__content {
+    margin-top: 20px;
+  }
+
+  &__content-image {
+    margin: 0;
+    padding-bottom: 20px;
+
+    > div {
+      position: relative;
+      padding-bottom: 100% / (16 / 9);
+
+      > img {
+        max-width: 100%;
+        position: absolute;
+      }
+    }
+
+    figcaption {
+      font-size: 15px;
+      line-height: 17px;
+      font-style: italic;
+      color: #505050;
+      margin-top: 0.5em;
+    }
+  }
+
+  .o-typography-heading1 {
+    font: 400 26px/1.2 oFontsGetFontFamilyWithFallbacks(FinancierDisplayWeb);
+    -webkit-font-smoothing: antialiased;
+    color: black;
+
+    @include oGridRespondTo(L) {
+      font-size: 40px;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+  }
+
+  .o-typography-lead {
+    font-size: 18px;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+    // color: black;
+
+    @include oGridRespondTo(L) {
+      font-size: 22px;
+    }
+  }
+
+  // show/hide share links according to device size
+  .o-share__action--linkedin {
+    @include oGridRespondTo($until: M) {
+      display:none;
+    }
+  }
+  .o-share__action--whatsapp {
+    @include oGridRespondTo($from: M) {
+      display: none;
+    }
+  }
+}

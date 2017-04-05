@@ -1,0 +1,40 @@
+$o-typography-is-silent: false;
+$o-typography-serif: Georgia, sans-serif;
+$o-typography-load-fonts: false;
+$o-assets-global-path: 'https://www.ft.com/__origami/service/build/v2/files/';
+
+@import 'o-typography/main';
+
+$fonts-to-include: (
+	MetricWeb: (
+		font-family: 'MetricWeb, sans-serif',
+		variants: (
+			(weight: thin, style: normal),
+			(weight: light, style: normal),
+			(weight: light, style: italic),
+			(weight: regular, style: normal),
+			(weight: regular, style: italic),
+			(weight: medium, style: normal),
+			(weight: semibold, style: normal),
+			(weight: bold, style: normal),
+			(weight: bold, style: italic),
+		)
+	),
+
+	FinancierDisplayWeb: (
+		font-family: 'FinancierDisplayWeb, serif',
+		variants: (
+			(weight: light, style: italic),
+			(weight: regular, style: normal),
+			(weight: medium, style: italic),
+			(weight: semibold, style: italic),
+			(weight: bold, style: normal)
+		)
+	)
+);
+
+@each $family, $properties in $fonts-to-include {
+	@each $variant in map-get($properties, variants) {
+		@include oFontsInclude($family, map-get($variant, weight), map-get($variant, style));
+	}
+}

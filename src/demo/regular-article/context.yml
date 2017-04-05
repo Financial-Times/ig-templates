@@ -1,0 +1,26 @@
+environment: development
+buildTime: 2001-01-19T12:00:00Z
+uuid: 3a499586-b2e0-11e4-a058-00144feab7de
+
+title: North Korea fires missile as Trump and Xi prepare to meet
+headline: North Korea fires missile as Trump and Xi prepare to meet
+standfirst: Latest provocative act from a regime set to figure high on agenda at US-China summit
+
+topic:
+  name: North Korea
+  url: https://www.ft.com/topics/places/North_Korea
+
+leadImage:
+  alt: Photograph of North Korean missile launching
+  caption: An image of a previous North Korean missile launch released by state news agency KCNA © EPA
+  url: http://com.ft.imagepublish.prod.s3.amazonaws.com/0b6706f4-199f-11e7-9c35-0dd2cb31823a
+  # ratio: 1.7777 # width/height (default is 16/9)
+
+# readNext appears in the article header on L+ (desktop)
+readNext:
+  kicker: Read next
+  topic:
+    name: Kevin Rudd
+    url: /stream/authorsId/NDUxZWQ1ODItNGE2Yi00NGEyLThiYjktNGY2NWEyNjg0OGVh-QXV0aG9ycw==
+  headline: Domestic concerns matter for Trump and Xi
+  url: /content/3c62a276-1941-11e7-9c35-0dd2cb31823a

@@ -10,20 +10,28 @@ const isDemoHTML = createMatcher('demo/**/*.html');
 
 const compile = compose(
   plugin('yaml'),
-  withSubset('lib/**', plugin('babel', { root: 'src' })),
+  plugin('sass', {
+    root: 'src',
+    loadPaths: 'bower_components',
+  }),
+  plugin('babel', { root: 'src', match: 'lib/**/*.js' }),
 
   // build demos in a vm
   plugin('vm', async (files, vm) => {
-    const ftGraphicsUI = vm.run('lib/index.js');
+    const ftGraphicsUI = vm.runFile('lib/index.js');
 
     // render the nunjucks demos with their respective contexts
     const outputFiles = await plugin('nunjucks', {
       root: 'src',
-      setup: ftGraphicsUI.setup,
+      setup: ftGraphicsUI.setupEnv,
       entry: 'demo/**/*.njk',
-      context: (name, allFiles) => JSON.parse(
-        String(allFiles.get(name.replace(/index\.njk$/, 'context.json')) || '{}'),
-      ),
+      context: (name, allFiles) => {
+        const localContext = JSON.parse(
+          String(allFiles.get(name.replace(/index\.njk$/, 'context.json')) || '{}'),
+        );
+
+        return { ...localContext };
+      },
     })(files);
 
     // add the resulting HTML files to our app
@@ -61,7 +69,7 @@ export const updateNav = async () => {
     '/* eslint-disable */',
     '',
     `// Generated at ${new Date().toISOString()}`,
-    '// Do not hand-edit this file. Use "yarn run updateNav" to redownload it',
+    '// Do not hand-edit this file. Use "trip updateNav" to redownload it',
     '// from next-navigation.ft.com.',
     '',
     `export default ${json};\n`,

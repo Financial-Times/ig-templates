@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en-GB" class="core" data-build-time="{{ buildTime | default(now()) | isoDate }}" data-content-id="{{ id if id else test_comments_uuid }}">
+{# Adding o-typography--loaded-* classes to work around undocumented behaviour in n-ui-foundations #}
+<html lang="en-GB" class="core o-typography--loaded-sans o-typography--loaded-sansBold o-typography--loaded-sansData o-typography--loaded-sansDataBold o-typography--loaded-serifDisplay o-typography--loaded-serifDisplayBold" data-build-time="{{ buildTime | default(now()) | isoDate }}" data-content-id="{{ id if id else test_comments_uuid }}">
   <head>
     {% block headPrepend %}{% endblock -%}
 
