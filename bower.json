@@ -10,7 +10,7 @@
     "o-teaser": "^1.11.2",
     "o-teaser-collection": "^1.1.1",
     "o-hoverable": "^3.1.0",
-    "n-ui-foundations": "^1.2.2",
+    "n-ui-foundations": "ft-interactive/n-ui-foundations",
     "o-share": "^3.2.2",
     "o-comment-count": "^0.3.4"
   }
