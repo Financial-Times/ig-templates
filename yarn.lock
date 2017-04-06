@@ -224,9 +224,9 @@ aws4@^1.2.1:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.6.0.tgz#83ef5ca860b2b32e4a0deedee8c771b9db57471e"
 
-axios@^0.15.3:
-  version "0.15.3"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.15.3.tgz#2c9d638b2e191a08ea1d6cc988eadd6ba5bdc053"
+axios@^0.16.0:
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.16.0.tgz#6ed9771d815f429e7510f2838262957c4953d3b6"
   dependencies:
     follow-redirects "1.0.0"
 
@@ -1195,9 +1195,9 @@ circular-json@^0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/circular-json/-/circular-json-0.3.1.tgz#be8b36aefccde8b3ca7aa2d6afc07a37242c0d2d"
 
-clean-css@^4.0.10:
-  version "4.0.10"
-  resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.0.10.tgz#6be448d6ba8c767654ebe11f158b97a887cb713f"
+clean-css@^4.0.11:
+  version "4.0.11"
+  resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.0.11.tgz#a6d88bffb399420b24298db49d99a1ed067534a8"
   dependencies:
     source-map "0.5.x"
 
@@ -1864,9 +1864,9 @@ eslint-plugin-react@^6.10.3:
     jsx-ast-utils "^1.3.4"
     object.assign "^4.0.4"
 
-eslint@^3.18.0:
-  version "3.18.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-3.18.0.tgz#647e985c4ae71502d20ac62c109f66d5104c8a4b"
+eslint@^3.19.0:
+  version "3.19.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-3.19.0.tgz#c8fc6201c7f40dd08941b87c085767386a679acc"
   dependencies:
     babel-code-frame "^6.16.0"
     chalk "^1.1.3"
@@ -1975,13 +1975,13 @@ exec-sh@^0.2.0:
   dependencies:
     merge "^1.1.3"
 
-exhibit-directory@^0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/exhibit-directory/-/exhibit-directory-0.11.0.tgz#88758c90cbf64461ede7dc2f1bf6a89acccd2aaf"
+exhibit-directory@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/exhibit-directory/-/exhibit-directory-0.12.0.tgz#4b56df52b53a02ab6bdd99305e655d6625edd215"
   dependencies:
     bluebird "^3.4.7"
     chalk "^1.1.3"
-    exhibit "^0.11.0"
+    exhibit "^0.12.0"
     filesize-parser "^1.4.1"
     immutable "^3.8.1"
     lodash "^4.17.4"
@@ -1990,29 +1990,29 @@ exhibit-directory@^0.11.0:
     sane "^1.5.0"
     subdir "0.0.3"
 
-exhibit-load-plugin@^0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/exhibit-load-plugin/-/exhibit-load-plugin-0.11.0.tgz#2f9ba62bcf9f8601fb4f7d6920a1ab2bbbeb15bd"
+exhibit-load-plugin@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/exhibit-load-plugin/-/exhibit-load-plugin-0.12.0.tgz#5fb5aadf4a88a11ba81409e89526a6f9fd18dfce"
   dependencies:
     chalk "^1.1.3"
-    exhibit-source-error "^0.11.0"
+    exhibit-source-error "^0.12.0"
     lodash "^4.17.4"
     resolve-from "^2.0.0"
     stack-trace "^0.0.9"
 
-exhibit-plugin-babel@^0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/exhibit-plugin-babel/-/exhibit-plugin-babel-0.11.0.tgz#36ebd993881c148e7e84ae012f7d97ece7c3b05c"
+exhibit-plugin-babel@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/exhibit-plugin-babel/-/exhibit-plugin-babel-0.12.0.tgz#0e7bf35cfe622e0db2cb88a04f1169f41e603aac"
   dependencies:
     babel-core "^6.23.1"
     convert-source-map "^1.4.0"
-    exhibit "^0.11.0"
-    exhibit-source-error "^0.11.0"
+    exhibit "^0.12.0"
+    exhibit-source-error "^0.12.0"
     lodash "^4.17.4"
 
-exhibit-plugin-browserify@^0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/exhibit-plugin-browserify/-/exhibit-plugin-browserify-0.11.0.tgz#1cc70747be3e3e0724dffae133e1e3d56b3975e3"
+exhibit-plugin-browserify@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/exhibit-plugin-browserify/-/exhibit-plugin-browserify-0.12.0.tgz#6ac92b0d706d65cde0b6f3c19a2b4ada0d8393a9"
   dependencies:
     bluebird "^3.4.7"
     browser-resolve-noio "^1.4.1"
@@ -2028,26 +2028,26 @@ exhibit-plugin-browserify@^0.11.0:
     subdir "0.0.3"
     xtend "^4.0.1"
 
-exhibit-plugin-sass@^0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/exhibit-plugin-sass/-/exhibit-plugin-sass-0.11.0.tgz#bf0578da0cab79efd01d5363d72f4c3aded05073"
+exhibit-plugin-sass@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/exhibit-plugin-sass/-/exhibit-plugin-sass-0.12.0.tgz#adf57ea2b90dd4534cb07e223d42f871db3870c7"
   dependencies:
     bluebird "^3.4.7"
-    exhibit "^0.11.0"
+    exhibit "^0.12.0"
     lodash "^4.17.4"
     node-sass "^4.5.0"
     sander "^0.6.0"
     subdir "0.0.3"
 
-exhibit-plugin-serve@^0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/exhibit-plugin-serve/-/exhibit-plugin-serve-0.11.0.tgz#5cb2403fca2e7a04f9ca1762e7abea05a9a47537"
+exhibit-plugin-serve@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/exhibit-plugin-serve/-/exhibit-plugin-serve-0.12.0.tgz#30aecc4d9854fd6f6f72c03ffcf41b2353779256"
   dependencies:
     bluebird "^3.4.7"
-    exhibit "^0.11.0"
-    exhibit-directory "^0.11.0"
-    exhibit-plugin-browserify "^0.11.0"
-    exhibit-source-error "^0.11.0"
+    exhibit "^0.12.0"
+    exhibit-directory "^0.12.0"
+    exhibit-plugin-browserify "^0.12.0"
+    exhibit-source-error "^0.12.0"
     koa "^2.0.0"
     lodash "^4.17.4"
     path-to-regexp "^1.7.0"
@@ -2055,16 +2055,16 @@ exhibit-plugin-serve@^0.11.0:
     socket.io "^1.7.3"
     socket.io-client "^1.7.3"
 
-exhibit-plugin-yaml@^0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/exhibit-plugin-yaml/-/exhibit-plugin-yaml-0.11.0.tgz#9e4fae33206c4902df685a4272f8fe24c3d8b24d"
+exhibit-plugin-yaml@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/exhibit-plugin-yaml/-/exhibit-plugin-yaml-0.12.0.tgz#039ffc122609668e1bfdc3026f8c14de04163ce6"
   dependencies:
-    exhibit "^0.11.0"
+    exhibit "^0.12.0"
     js-yaml "^3.8.1"
 
-exhibit-source-error@^0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/exhibit-source-error/-/exhibit-source-error-0.11.0.tgz#e0c2af8d9b4ecdc1182526296e9637af060fad45"
+exhibit-source-error@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/exhibit-source-error/-/exhibit-source-error-0.12.0.tgz#f12e78517ba54f225911fafa0f5826a67a6c7f54"
   dependencies:
     ansi-to-html "^0.6.0"
     chalk "^1.1.3"
@@ -2072,13 +2072,13 @@ exhibit-source-error@^0.11.0:
     lodash "^4.17.4"
     strip-ansi "^3.0.1"
 
-exhibit@^0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/exhibit/-/exhibit-0.11.0.tgz#b260beae2826e2d8c8b9e8862d0c8f9b6d8ee3bd"
+exhibit@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/exhibit/-/exhibit-0.12.0.tgz#f441b5074e9ad0f097b967ce323eea26014043d9"
   dependencies:
     bluebird "^3.4.7"
     chalk "^1.1.3"
-    exhibit-load-plugin "^0.11.0"
+    exhibit-load-plugin "^0.12.0"
     immutable "^3.8.1"
     join-table "^2.0.0"
     lodash "^4.17.4"
