@@ -13,11 +13,7 @@
 {% include "../client-scripts/boot.js" %}
 </script>
 
-{% if criticalCSS %}
-<style>
-{{ criticalCSS | minifyCSS(environment) | safe }}
-</style>
-{% endif %}
+{% if criticalCSS %}<style>{{ criticalCSS | minifyCSS(environment) | safe }}</style>{% endif %}
 
 {# <link rel="stylesheet" href="{{ origamiBuildServiceURL(allOrigamiModules, 'css', environment) }}"> #}
 
@@ -83,14 +79,14 @@
 <meta name="twitter:url" content="{{ url }}">
 <meta property="og:url" content="{{ url }}">
 
-{% if mainImage.url %}
-<link rel="image_src" href="{{ mainImage.url }}">
+{% if leadImage.url %}
+<link rel="image_src" href="{{ leadImage.url }}">
 {% endif %}
-{% if twitterImage | default(socialImage) | default(mainImage.url) %}
-<meta name="twitter:image" content="{{ twitterImage | default(socialImage) | default(mainImage.url) }}">
+{% if twitterImage | default(socialImage) | default(leadImage.url) %}
+<meta name="twitter:image" content="{{ twitterImage | default(socialImage) | default(leadImage.url) }}">
 {% endif %}
-{% if facebookImage | default(socialImage) | default(mainImage.url) %}
-<meta property="og:image" content="{{ facebookImage | default(socialImage) | default(mainImage.url) }}">
+{% if facebookImage | default(socialImage) | default(leadImage.url) %}
+<meta property="og:image" content="{{ facebookImage | default(socialImage) | default(leadImage.url) }}">
 {% endif %}
 
 <meta name="twitter:card" content="{{ twitterCard }}">

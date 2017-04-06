@@ -2,6 +2,10 @@ environment: development
 buildTime: 2001-01-19T12:00:00Z
 uuid: 3a499586-b2e0-11e4-a058-00144feab7de
 
+edition: uk # for nav purposes
+
+currentNav: https://www.ft.com/world/uk
+
 title: North Korea fires missile as Trump and Xi prepare to meet
 headline: North Korea fires missile as Trump and Xi prepare to meet
 standfirst: Latest provocative act from a regime set to figure high on agenda at US-China summit
@@ -22,5 +26,5 @@ readNext:
   topic:
     name: Kevin Rudd
     url: /stream/authorsId/NDUxZWQ1ODItNGE2Yi00NGEyLThiYjktNGY2NWEyNjg0OGVh-QXV0aG9ycw==
-  headline: Domestic concerns matter for Trump and Xi
+  headline: Trump, Xi and a great power bargain
   url: /content/3c62a276-1941-11e7-9c35-0dd2cb31823a

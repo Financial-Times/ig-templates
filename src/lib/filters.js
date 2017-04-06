@@ -44,9 +44,9 @@ export const formatTime = (
   throw new Error(`formatTime filter: Unexpected input type: "${typeof time}"`);
 };
 
-export const resolveURL = (url: string, from: string = 'https://www.ft.com/') =>
-  nodeURL.resolve(from, url)
-;
+export const resolveURL = (url: ?string, from: string = 'https://www.ft.com/') => (
+  url ? nodeURL.resolve(from, url) : ''
+);
 
 const markdownRenderer = new MarkdownIt({
   html: true,

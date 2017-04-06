@@ -1,0 +1,79 @@
+<nav id="o-header-nav-desktop" class="o-header__row o-header__nav o-header__nav--desktop" role="navigation" aria-label="Primary navigation" data-trackable="header-nav:desktop">
+	<div class="o-header__container">
+		<ul class="o-header__nav-list o-header__nav-list--left" data-trackable="primary-nav">
+      {% for item in nav.menus['navbar-' + (edition | default('uk'))].items %}
+
+			<li class="o-header__nav-item">
+				<a class="o-header__nav-link o-header__nav-link--primary{% if (currentNav.href | resolveURL) === (item.href | resolveURL) %} o-header-nav__list-link--highlight{% endif %}" href="{{ item.url | resolveURL }}" id="o-header-link-{{ loop.index0 }}"{% if item.selected %} aria-label="Current page" aria-selected="true"{% endif %} data-trackable="{{ item.label }}">{{ item.label }}</a>
+
+        {% if item.meganav %}
+        <div class="o-header__mega" id="o-header-mega-{{loop.index0}}" role="group" aria-labelledby="o-header-link-{{loop.index0}}" data-o-header-mega data-trackable="meganav | {{item.label}}">
+        	<div class="o-header__container">
+        		<div class="o-header__mega-wrapper">
+            {% for meganavItem in item.meganav %}
+            {% if meganavItem.data %}
+              {% if meganavItem.component === 'sectionlist' %}
+                <div class="o-header__mega-column o-header__mega-column--subsections" data-trackable="sections">
+              		<h3 class="o-header__mega-heading">{{meganavItem.title}}</h3>
+              		<div class="o-header__mega-content">
+              			<ul class="o-header__mega-list">
+                      {% for sub1 in meganavItem.data %}
+                        {% for sub2 in sub1 %}
+                        <li class="o-header__mega-item">
+                          <a class="o-header__mega-link" href="{{sub2.url}}" data-trackable="link">{{sub2.label}}</a>
+                        </li>
+                        {% endfor %}
+                      {% endfor %}
+              			</ul>
+              		</div>
+              	</div>
+              {% elif meganavItem.component === 'articlelist' %}
+                <div class="o-header__mega-column o-header__mega-column--articles" data-trackable="popular">
+                	<h3 class="o-header__mega-heading">{{meganavItem.title}}</h3>
+                	<div class="o-header__mega-content">
+                		<ul class="o-header__mega-list">
+                      {% for item in meganavItem.data %}
+                			<li class="o-header__mega-item">
+                				<a class="o-header__mega-link" href="{{item.url}}" data-trackable="link">{{item.label}}</a>
+                			</li>
+                      {% endfor %}
+                		</ul>
+                	</div>
+                </div>
+              {% endif %}
+            {% endif %}
+
+            {% endfor %}
+        		</div>
+        	</div>
+        </div>
+
+        {% endif %}
+			</li>
+			{% endfor %}
+		</ul>
+
+		{# {{#unlessEquals nUi.header.userNav false}}
+			<ul class="o-header__nav-list o-header__nav-list--right" data-trackable="user-nav">
+				{{#if @root.anon.userIsAnonymous}}
+					{{#with @root.navigation.menus.navbar-right-anon.items.[0]}}
+						<li class="o-header__nav-item">
+							<a class="o-header__nav-link" href="{{url}}" data-trackable="{{label}}">{{label}}</a>
+						</li>
+					{{/with}}
+					{{#with @root.navigation.menus.navbar-right-anon.items.[1]}}
+					<li class="o-header__nav-item">
+						<a class="o-header__nav-button" href="{{url}}" data-trackable="{{label}}">{{label}}</a>
+					</li>
+					{{/with}}
+				{{else}}
+					{{#each @root.navigation.menus.navbar-right.items}}
+						<li class="o-header__nav-item">
+							<a class="o-header__nav-link" href="{{url}}" data-trackable="{{label}}">{{label}}</a>
+						</li>
+					{{/each}}
+				{{/if}}
+			</ul>
+		{{/unlessEquals}} #}
+	</div>
+</nav>

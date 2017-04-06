@@ -28,7 +28,7 @@ $o-teaser-is-silent: false;
   &__header {}
 
   &__header-aside {
-    padding-left: 0;
+    @include oGridRespondTo(XL) { padding-left: 0; }
   }
 
   .standalone-teaser-heading {
@@ -117,4 +117,11 @@ $o-teaser-is-silent: false;
       display: none;
     }
   }
+}
+
+.o-header__mega-heading {
+  font-weight: 400;
+}
+.o-header__mega {
+  z-index: 102 !important;
 }
