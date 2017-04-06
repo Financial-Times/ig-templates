@@ -23,11 +23,12 @@ $o-teaser-is-silent: false;
 .graphics-article {
   &__topper {
     margin-top: 10px;
-    // outline: 1px solid blue;
   }
+
   &__header {}
+
   &__header-aside {
-    // outline: 1px solid red;
+    padding-left: 0;
   }
 
   .standalone-teaser-heading {
@@ -39,7 +40,7 @@ $o-teaser-is-silent: false;
     color: #000;
 
     &:after {
-      content: "";
+      content: '';
       display: block;
       width: 60px;
       margin-top: 5px;
@@ -99,14 +100,13 @@ $o-teaser-is-silent: false;
     font-size: 18px;
     line-height: 1.2;
     -webkit-font-smoothing: antialiased;
-    // color: black;
 
     @include oGridRespondTo(L) {
       font-size: 22px;
     }
   }
 
-  // show/hide share links according to device size
+  // show/hide certain share links according to device size
   .o-share__action--linkedin {
     @include oGridRespondTo($until: M) {
       display:none;
