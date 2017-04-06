@@ -18,6 +18,10 @@
 
   if (!cutsTheMustard) return;
 
+  var htmlElement = document.documentElement;
+
+  htmlElement.className = htmlElement.className.replace(/\bcore\b/, 'enhanced');
+
   // make a global namespace for boot management utils
   var Boot = window.Boot = {};
 
