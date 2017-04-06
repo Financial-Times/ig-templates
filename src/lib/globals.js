@@ -18,16 +18,17 @@ export nav from './nav.js';
 
 /** Default Origami modules to use */
 export const defaultOrigamiModules = (() => {
-  const bowerJSON = fs.readFileSync(
+  const bowerJSON = JSON.parse(fs.readFileSync(
     path.resolve(__dirname, '..', '..', 'bower.json'),
     'utf8',
-  );
+  ));
 
-  const bowerDeps = JSON.parse(bowerJSON).dependencies;
+  const bowerDeps = { ...bowerJSON.dependencies, ...bowerJSON.resolutions };
 
   return _.pick(bowerDeps, [
     'o-header',
-    // 'o-fonts',
+    'o-comments',
+    // 'o-icons',
     // 'o-footer',
     'o-grid',
     'o-typography',
@@ -35,9 +36,9 @@ export const defaultOrigamiModules = (() => {
     // 'o-teaser',
     // 'o-teaser-collection',
     'o-hoverable',
-    'n-ui-foundations',
+    // 'n-ui-foundations',
     'o-comment-count',
-  ]);
+  ].sort());
 })();
 
 /**

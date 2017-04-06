@@ -12,6 +12,12 @@
     "o-hoverable": "^3.1.0",
     "n-ui-foundations": "ft-interactive/n-ui-foundations",
     "o-share": "^3.2.2",
-    "o-comment-count": "^0.3.4"
+    "o-comment-count": "^0.3.4",
+    "o-comment-ui": "v4.0.0-beta.2",
+    "o-comments": "v4.0.0-beta.2"
+  },
+  "resolutions": {
+    "o-comment-ui": "v4.0.0-beta.2",
+    "o-icons": "^5.2.2"
   }
 }

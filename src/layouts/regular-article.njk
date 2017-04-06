@@ -18,7 +18,7 @@
 
           {% block headerAside %}
           {% if readNext %}
-          <aside class="graphics-article__header-aside" data-o-grid-colspan="hide L4 XL3 XLoffset1">
+          <aside class="graphics-article__aside" data-o-grid-colspan="hide L4 XL3 XLoffset1">
             {% if readNext.kicker %}
             <div class="standalone-teaser-heading">{{ readNext.kicker }}</div>
             {% endif %}
@@ -55,7 +55,7 @@
           <div data-o-grid-colspan="12 L8 XL7 XLoffset1">
             {% block leadImage %}
             {% if leadImage %}
-            {{ macros.contentImage(leadImage.url, leadImage.alt, leadImage.ratio) }}
+            {{ macros.contentImage(leadImage) }}
             {% endif %}
             {% endblock %}
 
@@ -71,10 +71,25 @@
             {% block articleBody %}{% endblock %}
           </div>
 
-
+          <aside class="graphics-article__aside" data-o-grid-colspan="hide L4 XL3 XLoffset1">
+            {% block articleContentAside %}
+            {% endblock %}
+          </aside>
         </div>
       </div>
     </div>
   </article>
 
+  {% if uuid %}
+  <div
+    data-o-component="o-comments"
+    id="comments"
+    data-o-comments-auto-init="true"
+    data-o-comments-config-title="{{ headline }}"
+    data-o-comments-config-url="{{ url }}"
+    data-o-comments-config-article-id="{{ uuid }}">
+
+      <div class="o--if-no-js">To participate in this chat, you need to upgrade to a newer web browser. <a href="http://help.ft.com/tools-services/browser-compatibility/">Learn more.</a></div>
+  </div>
+  {% endif %}
 {% endblock %}

@@ -20,7 +20,7 @@
                       {% for sub1 in meganavItem.data %}
                         {% for sub2 in sub1 %}
                         <li class="o-header__mega-item">
-                          <a class="o-header__mega-link" href="{{sub2.url}}" data-trackable="link">{{sub2.label}}</a>
+                          <a class="o-header__mega-link" href="{{sub2.url | resolveURL }}" data-trackable="link">{{sub2.label}}</a>
                         </li>
                         {% endfor %}
                       {% endfor %}
@@ -34,7 +34,7 @@
                 		<ul class="o-header__mega-list">
                       {% for item in meganavItem.data %}
                 			<li class="o-header__mega-item">
-                				<a class="o-header__mega-link" href="{{item.url}}" data-trackable="link">{{item.label}}</a>
+                				<a class="o-header__mega-link" href="{{item.url | resolveURL }}" data-trackable="link">{{item.label}}</a>
                 			</li>
                       {% endfor %}
                 		</ul>

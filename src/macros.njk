@@ -1,12 +1,12 @@
-{# This is for images in a main content well, which has fixed sizes #}
-{% macro contentImage(url, alt, ratio) %}
-<figure class="graphics-article__content-image" alt="{{ alt }}">
-  <div{% if ratio %} style="padding-bottom: {{ (100 / ratio) | round(2) }}%"{% endif %}>
+{# This is for images in a main content well, which has fixed widths #}
+{% macro contentImage(details) %}
+<figure class="graphics-article__content-image" alt="{{ details.alt }}">
+  <div{% if details.ratio %} style="padding-bottom: {{ (100 / details.ratio) | round(2) }}%"{% endif %}>
     <img
-      alt="{{ alt }}"
-      srcset="{{ url | imageServiceSrcset([700, 620]) }}"
+      alt="{{ details.alt }}"
+      srcset="{{ details.url | imageServiceSrcset([700, 620]) }}"
       sizes="(min-width: 76.25em) 700px, (min-width: 61.25em) 620px, (min-width: 46.25em) 700px, calc(100vw - 20px)">
   </div>
-  <figcaption>An image of a previous North Korean missile launch released by state news agency KCNA © EPA</figcaption>
+  {% if details.caption %}<figcaption>{{ details.caption }}</figcaption>{% endif %}
 </figure>
 {% endmacro %}
