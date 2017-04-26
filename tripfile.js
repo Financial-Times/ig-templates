@@ -23,6 +23,7 @@ const compile = compose(
     // render the nunjucks demos with their respective contexts
     const outputFiles = await plugin('nunjucks', {
       root: 'src',
+      nunjucks: ftGraphicsUI.nunjucks,
       setup: ftGraphicsUI.setupEnv,
       entry: 'demo/**/*.njk',
       context: (name, allFiles) => {

@@ -61,6 +61,16 @@ $o-teaser-is-silent: false;
     margin-top: 20px;
   }
 
+  &__content-body {
+    font: 18px/1.7 Georgia,serif;
+    margin-bottom: 40px;
+    -webkit-font-smoothing: antialiased;
+
+    p {
+      
+    }
+  }
+
   &__content-image {
     margin: 0;
     padding-bottom: 20px;

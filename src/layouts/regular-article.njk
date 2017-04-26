@@ -59,16 +59,20 @@
             {% endif %}
             {% endblock %}
 
-
             <div class="graphics-article__share-bar" data-trackable="share | top">
-              {% include '../partials/share-links.njk' %}
+            {% include '../partials/share-links.njk' %}
             </div>
 
-            <p>CONTENT</p>
-
-            <p>stuff</p>
-
+            <div class="graphics-article__content-body">
             {% block articleBody %}{% endblock %}
+            </div>
+
+            <footer class="n-content-copyright"><small><a href="http://help.ft.com/help/legal-privacy/copyright/copyright-policy/" data-trackable="link-copyright">Copyright</a>
+					The Financial Times Limited 2017. All rights reserved. You may share using our article tools. Please don't cut articles from FT.com and redistribute by email or post to the web.</small></footer>
+
+            <div class="graphics-article__share-bar" data-trackable="share | bottom">
+            {% include '../partials/share-links.njk' %}
+            </div>
           </div>
 
           <aside class="graphics-article__aside" data-o-grid-colspan="hide L4 XL3 XLoffset1">
@@ -80,16 +84,5 @@
     </div>
   </article>
 
-  {% if uuid %}
-  <div
-    data-o-component="o-comments"
-    id="comments"
-    data-o-comments-auto-init="true"
-    data-o-comments-config-title="{{ headline }}"
-    data-o-comments-config-url="{{ url }}"
-    data-o-comments-config-article-id="{{ uuid }}">
-
-      <div class="o--if-no-js">To participate in this chat, you need to upgrade to a newer web browser. <a href="http://help.ft.com/tools-services/browser-compatibility/">Learn more.</a></div>
-  </div>
-  {% endif %}
+  {% include '../partials/comments.njk' %}
 {% endblock %}

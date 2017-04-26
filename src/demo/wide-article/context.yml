@@ -1,19 +1,63 @@
-headline: David Cameron ‘lobbied on behalf of Uber’ in London
+buildTime: 2001-01-19T12:00:00Z
 
+# Methode link file UUID
+uuid: d4be8236-13a8-11e7-b0c1-37e417ee6c76
+
+url: http://www.ft.com/some-public-url
+headline: David Cameron ‘lobbied on behalf of Uber’ in London
 standfirst: Ex-PM said to have urged Boris Johnson, then London mayor, to drop tough regulations
+
+# title: HTML <title>, max 70 characters (defaults to headline)
+# metaDescription: Custom description, max 155 characters (defaults to metaDescription)
 
 topic:
   url: https://www.ft.com/french-presidential-election
   name: French presidential election
 
-image: http://com.ft.imagepublish.prod.s3.amazonaws.com/c8a4f114-1313-11e7-b0c1-37e417ee6c76
+# image for sharing etc
+
+image:
+  url: http://com.ft.imagepublish.prod.s3.amazonaws.com/c8a4f114-1313-11e7-b0c1-37e417ee6c76
+  alt: Photograph of David Cameron and Boris Johnson
+  caption: Theresa May signs the letter triggering Article 50 in Downing Street on Tuesday © Getty
+
+# publishDate: 2010-01-02T10:10:10Z # leave this unset for "now"
+
+# furniture:
+#   header: true
+#   nav: true
+#   drawer: true
+#   footer: true
+#   comments: true
+#   relatedContent: true
 
 byline:
-  -
-    name: Jim Pickard
-    url: https://www.ft.com/stream/authorsId/Q0ItMDAwMDgzNQ==-QXV0aG9ycw==
-  -
-    name: Martin Stabe
-    url: https://www.ft.com/martin-stabe
+  preamble: by
+  # this array comes from the "authors" sheet and is magically added
+  authors:
+    -
+      name: Jim Pickard
+      url: https://www.ft.com/stream/authorsId/Q0ItMDAwMDgzNQ==-QXV0aG9ycw==
+      append: in London
+    -
+      name: Martin Stabe
+      url: https://www.ft.com/martin-stabe
+      append: in Brussels
 
 environment: development
+
+# enableErrorReporting: true
+# enableAnalytics: true
+
+socialMetadata:
+  twitter:
+    title: null
+    description: null
+    cardType: summary_large_image
+    image:
+      url: null
+      alt: null
+  facebook:
+    title: null
+    description: null
+    image: null
