@@ -16,7 +16,7 @@ autoRegister(Handlebars);
 
 After registering as above, you can use your `Handlebars` instance to compile templates that make use of ig-templates' [layouts](src/templates/layouts) and [partials](src/templates/partials).
 
-## Debugging
+### Debugging
 
 The Handlebars helpers use the [debug](https://github.com/visionmedia/debug) module for logging with the prefix `ig-templates`. So if you want to see logging, set `DEBUG=ig-templates` in your environment.
 
