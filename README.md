@@ -1,4 +1,4 @@
-# ig-templates
+# ig-templates [![CircleCI](https://circleci.com/gh/Financial-Times/ig-templates.svg?style=svg)](https://circleci.com/gh/Financial-Times/ig-templates) [![npm](https://img.shields.io/npm/v/ig-templates.svg)](https://npmjs.com/package/ig-templates)
 
 **Work in progress**
 
@@ -14,7 +14,7 @@ import { autoRegister } from 'ig-templates';
 autoRegister(Handlebars);
 ```
 
-After registering as above, you can use `Handlebars` to compile templates that make use of ig-templates' [layouts](src/templates/layouts) and [partials](src/templates/partials).
+After registering as above, you can use your `Handlebars` instance to compile templates that make use of ig-templates' [layouts](src/templates/layouts) and [partials](src/templates/partials).
 
 ## Debugging
 
