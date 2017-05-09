@@ -1,0 +1,30 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/project
+    docker:
+      - image: node:7
+    steps:
+      - checkout
+      - restore_cache:
+          key: project-{{ checksum "yarn.lock" }}
+      - run: yarn
+      - save_cache:
+          key: project-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules/
+      - run:
+          name: ESLint
+          command: yarn run eslint -- .
+      - run:
+          name: Build
+          command: yarn run build
+      - store_artifacts:
+          path: dist/
+      - deploy:
+          name: Maybe publish to npm
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              echo -e "$NPM_USERNAME\n$NPM_PASSWORD\n$NPM_EMAIL" | npm login
+              ./node_modules/.bin/publish
+            fi

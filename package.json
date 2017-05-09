@@ -47,5 +47,8 @@
     "trip": "^1.0.3"
   },
   "main": "dist/lib",
-  "repository": "financial-times/ft-graphics-ui"
+  "repository": "financial-times/ft-graphics-ui",
+  "scripts": {
+    "build": "trip build"
+  }
 }
