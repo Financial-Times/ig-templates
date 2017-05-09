@@ -16,7 +16,7 @@ jobs:
           command: yarn --pure-lockfile && npm rebuild node-sass
       - run:
           name: Install bower dependencies
-          command: bower install --allow-root
+          command: yarn run bower -- install --allow-root
       - save_cache:
           key: node_modules-{{ checksum "yarn.lock" }}
           paths:
