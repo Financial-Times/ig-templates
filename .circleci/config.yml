@@ -7,15 +7,16 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: project-{{ checksum "yarn.lock" }}
+          key: project-{{ checksum "yarn.lock" }}-{{ checksum "bower.json" }}
       - run:
           name: Install dependencies
           # manually building node-sass seems to be necessary in docker
           command: yarn && npm rebuild node-sass
       - save_cache:
-          key: project-{{ checksum "yarn.lock" }}
+          key: project-{{ checksum "yarn.lock" }}-{{ checksum "bower.json" }}
           paths:
             - node_modules/
+            - bower_components/
       - run:
           name: ESLint
           command: yarn run eslint -- .
