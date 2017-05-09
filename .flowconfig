@@ -1,7 +1,13 @@
 [ignore]
+# pending https://github.com/facebook/flow/issues/869
+.*/node_modules/config-chain/test/broken.json
+.*/node_modules/npm/test/fixtures/config/package.json
+.*/node_modules/join-table/src/join-table.js
+.*/node_modules/join-table/src/join-table.test.js
 
 [include]
 
 [libs]
 
 [options]
+suppress_comment=\\(.\\|\n\\)*\\$FlowFixMe

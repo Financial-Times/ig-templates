@@ -1,0 +1,23 @@
+// skip links for keyboard users
+.n-skip-link {
+  @include nUiZIndexFor('notification');
+  position: absolute;
+  top: 1em;
+  left: -9999px;
+  padding: 0.5em 1em;
+  background: getColor('purple-1');
+  color: getColor('white');
+
+  &:focus {
+    @include oEffectsShadowsElevation('high');
+    left: 0;
+    color: getColor('white');
+  }
+}
+
+.o-header__mega-heading {
+  font-weight: 400;
+}
+.o-header__mega {
+  z-index: 102 !important;
+}

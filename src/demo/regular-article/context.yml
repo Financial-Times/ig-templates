@@ -1,6 +1,9 @@
 environment: development
 buildTime: 2001-01-19T12:00:00Z
 uuid: 3a499586-b2e0-11e4-a058-00144feab7de
+url: https://www.example.com/some-article
+
+updatedTime: '2017-01-01'
 
 edition: uk # for nav purposes
 
@@ -28,3 +31,16 @@ readNext:
     url: /stream/authorsId/NDUxZWQ1ODItNGE2Yi00NGEyLThiYjktNGY2NWEyNjg0OGVh-QXV0aG9ycw==
   headline: Trump, Xi and a great power bargain
   url: /content/3c62a276-1941-11e7-9c35-0dd2cb31823a
+
+scripts:
+  - main.js
+
+byline:
+  - name: Fred
+    url: http://www.example.com/
+  - name: Bob
+    url: http://www.example.com/
+  - name: Alice
+    url: http://www.example.com/
+  - name: Rachel
+    url: http://www.example.com/

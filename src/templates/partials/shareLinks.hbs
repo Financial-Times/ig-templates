@@ -1,0 +1,38 @@
+{{#if url}}
+<div data-o-component="o-share" class="o-share" data-o-share--js="">
+	<ul>
+		<li class="o-share__action o-share__action--twitter">
+			<a target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?url={{percentEncode url}}&amp;text={{percentEncode headline}}&amp;via=FT" data-trackable="twitter"><i>Share on Twitter (opens new window)</i></a>
+		</li>
+		<li class="o-share__action o-share__action--facebook">
+			<a target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u={{percentEncode url}}&amp;t={{percentEncode headline}}" data-trackable="facebook"><i>Share on Facebook (opens new window)</i></a>
+		</li>
+		<li class="o-share__action o-share__action--linkedin">
+			<a target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{percentEncode url}}&amp;title={{percentEncode headline}}&amp;source=Financial+Times" data-trackable="linkedin"><i>Share on LinkedIn (opens new window)</i></a>
+		</li>
+		<li class="o-share__action o-share__action--whatsapp">
+			<a target="_blank" rel="noopener" href="whatsapp://send?text={{percentEncode headline}}%20-%20{{percentEncode url}}" data-trackable="whatsapp"><i>Share on Whatsapp (opens new window)</i></a>
+		</li>
+    {{! <li class="o-share__action o-share__action--mail">
+			<button data-n-article-email-clickable="" data-n-article-email-container="top" data-n-article-email-free-article="false" data-trackable="email">
+				<i>Email</i>
+			</button>
+		</li> }}
+	</ul>
+</div>
+{{/if}}
+
+{{#if uuid}}
+<div class="graphics-article__share-bar__extra">
+  <a
+    data-o-component="o-comment-count"
+		data-o-comment-count-auto-init="false"
+		data-o-comment-count-config-article-id="{{ uuid }}"
+		data-o-comment-count-config-template="{count}"
+		data-o-comment-count-config-aria-label-template="There are {count} comments on this article. Write a comment."
+		class="article__share__comments"
+		data-trackable="view-comments"
+		style="visibility: hidden;"
+		href="#comments"></a>
+</div>
+{{/if}}

@@ -1,0 +1,134 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://www.ft.com">
+<link rel="preconnect" href="https://cdn.polyfill.io">
+
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+
+{{! TODO add ctm here, optionally from context }}
+
+<script>
+var Boot = {};
+Boot.scripts = [
+  {{#each scripts}}
+  '{{this}}'{{#unless @last}},{{/unless}}
+  {{/each}}
+];
+</script>
+
+{{#if bootJS}}
+<script>
+{{{includeFromFramework bootJS}}}
+</script>
+{{/if}}
+
+{{#if criticalCSS}}
+<style>{{{includeFromFramework criticalCSS}}}</style>
+{{/if}}
+
+{{!-- {# <link rel="stylesheet" href="{{ origamiBuildServiceURL(allOrigamiModules, 'css', environment) }}"> #} --}}
+{{!--
+{%- if stylesheets %}{% for stylesheet in stylesheets %}
+{% endfor %}{% endif -%} --}}
+
+{{#each stylesheets}}
+<link rel="stylesheet" href="{{ this }}">
+{{/each}}
+
+<link href="https://plus.google.com/113457471429583444041/" rel="publisher" />
+<meta property="fb:app_id" content="429755910551755" />
+
+<link rel="shortcut icon" href="https://ig.ft.com/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="https://ig.ft.com/apple-touch-icon.png">
+
+<meta name="format-detection" content="telephone=no">
+<meta name="robots" content="index,follow">
+<meta name="copyright" content="Financial Times">
+<meta name="theme-color" content="#fff1e0" />
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "name": "Financial Times",
+  "alternateName": "FT.com",
+  "url": "http://www.ft.com"
+}
+</script>
+{{#if topic.name}}{{#if topic.url}}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "item": {
+      "@id": "{{ topic.url }}",
+      "name": "{{ topic.name }}",
+      "image": ""
+    }
+  }]
+}
+</script>
+{{/if}}{{/if}}
+
+{{#if enableErrorReporting}}
+<script type="application/json" data-o-errors-config>
+{"sentryEndpoint": "https://ddbd80489ff549538250bbe37fa52bbd@sentry.io/71130"}
+</script>
+<script async src="https://origami-build.ft.com/v2/bundles/js?export=oErrors&modules=o-errors@^3.5.1"></script>
+{{/if}}
+
+{{#> titleElement}}
+<title>{{ title }}</title>
+{{/titleElement}}
+
+
+<meta name="twitter:title" content="{{ twitterHeadline }}">
+<meta property="og:title" content="{{ facebookHeadline }}">
+
+<meta name="description" content="{{ metaDescription }}">
+<meta name="twitter:description" content="{{ twitterDescription }}">
+<meta property="og:description" content="{{ facebookDescription }}">
+
+<link rel="canonical" href="{{ url }}">
+<meta name="twitter:url" content="{{ url }}">
+<meta property="og:url" content="{{ url }}">
+
+{{#if leadImage}}
+<link rel="image_src" href="{{ leadImage.url }}">
+{{/if}}
+
+{{#if twitterImage}}
+<meta name="twitter:image" content="{{ twitterImage }}">
+{{/if}}
+
+{{#if facebookImage}}
+<meta property="og:image" content="{{ facebookImage }}">
+{{/if}}
+
+{{#if twitterCardType}}
+<meta name="twitter:card" content="{{ twitterCardType }}">
+{{/if}}
+
+<meta name="twitter:site" content="@ft">
+
+{{#if twitterCreator}}
+<meta name="twitter:creator" content="{{ twitterCreator }}">
+{{/if}}
+
+{{#if enableAnalytics}}
+  <link rel="preconnect" href="https://spoor-api.ft.com">
+  <meta property="ft.track:is_live" content="true"/>
+
+  {{#if tracking.product}}
+  <meta property="ft.track:product" content="{{ tracking.product }}"/>
+  {{/if}}
+
+  {{#if tracking.micrositeName}}
+  <meta property="ft.track:microsite_name" content="{{ tracking.micrositeName }}"/>
+  {{/if}}
+{{/if}}

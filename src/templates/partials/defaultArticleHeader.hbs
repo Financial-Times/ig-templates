@@ -1,0 +1,13 @@
+<div>
+  <a href="{{ topic.url }}" class="o-typography-link-topic">{{ topic.name }}</a>
+</div>
+
+<h1 class="o-typography-heading1" itemprop="headline">{{ headline }}</h1>
+
+<p class="o-typography-lead">
+  {{ standfirst }}
+</p>
+
+{{#updatedTime}}
+<meta itemprop="dateModified" content="{{isoTime updatedTime}}">
+{{/updatedTime}}
