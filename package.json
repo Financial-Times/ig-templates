@@ -51,7 +51,6 @@
   "main": "dist/lib",
   "repository": "financial-times/ft-graphics-ui",
   "scripts": {
-    "build": "trip build",
-    "postinstall": "bower install --allow-root"
+    "build": "trip build"
   }
 }
