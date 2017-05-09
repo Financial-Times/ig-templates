@@ -125,10 +125,10 @@ const compile = compose(
   }, { root: 'src' }),
 
   // report stats
-  // cache((content, name) => {
-  //   console.log(name, chalk.yellow(prettyBytes(content.length)));
-  //   return content;
-  // }),
+  cache((content, name) => {
+    console.log(name, chalk.yellow(prettyBytes(content.length)));
+    return content;
+  }),
 );
 
 export const develop = async () => {
