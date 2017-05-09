@@ -1,7 +1,7 @@
 {
   "name": "ig-templates",
   "description": "Handlebars templates and helpers for use in FT IG projects",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "dependencies": {
     "chalk": "^1.1.3",
     "d3-time-format": "^2.0.5",
