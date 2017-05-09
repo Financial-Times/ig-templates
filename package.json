@@ -48,6 +48,9 @@
     "rollup-plugin-node-resolve": "^3.0.0",
     "trip": "^1.0.3"
   },
+  "files": [
+    "dist"
+  ],
   "main": "dist/lib",
   "repository": "financial-times/ft-graphics-ui",
   "scripts": {
