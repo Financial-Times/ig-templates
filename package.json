@@ -1,5 +1,6 @@
 {
   "name": "ig-templates",
+  "description": "Handlebars templates and helpers for use in FT IG projects",
   "version": "0.0.1",
   "dependencies": {
     "chalk": "^1.1.3",
