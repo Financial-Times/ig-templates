@@ -1,6 +1,6 @@
 {
   "name": "ig-templates",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "dependencies": {
     "chalk": "^1.1.3",
     "d3-time-format": "^2.0.5",
