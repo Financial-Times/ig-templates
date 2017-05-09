@@ -153,9 +153,9 @@ export const markdown: TemplateHelper = ({ fn, context }, arg?: string) => {
   return new SafeString(markdownRenderer.render(markdownString));
 };
 
-export const includeFromFramework: TemplateHelper = (options, name) => {
-  return fs.readFileSync(path.resolve(srcRoot, name));
-};
+export const includeFromFramework: TemplateHelper = (options, name) =>
+  fs.readFileSync(path.resolve(srcRoot, name))
+;
 
 export const inlineMarkdown: TemplateHelper = makePlainHelper((text: string) => {
   if (!text) return '';

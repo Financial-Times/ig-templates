@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+
 import Directory from 'exhibit-directory';
 import handlebars from 'handlebars';
 import bowerResolve from 'rollup-plugin-bower-resolve';
