@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-// Generated at 2017-04-06T13:05:57.306Z
+// Generated at 2017-05-09T13:36:57.348Z
 // Do not hand-edit this file. Use "trip updateNav" to redownload it
 // from next-navigation.ft.com.
 
@@ -537,13 +537,28 @@ export default {
                             "submenu": null
                           },
                           {
+                            "label": "Rana Foroohar",
+                            "url": "/rana-foroohar",
+                            "submenu": null
+                          },
+                          {
                             "label": "Janan Ganesh",
                             "url": "/comment/columnists/janan-ganesh",
                             "submenu": null
                           },
                           {
+                            "label": "David Gardner",
+                            "url": "/david-gardner",
+                            "submenu": null
+                          },
+                          {
                             "label": "John Gapper",
                             "url": "/comment/columnists/john-gapper",
+                            "submenu": null
+                          },
+                          {
+                            "label": "Izabella Kaminska",
+                            "url": "/izabella-kaminska",
                             "submenu": null
                           },
                           {
@@ -572,6 +587,11 @@ export default {
                             "submenu": null
                           },
                           {
+                            "label": "Sarah O'Connor",
+                            "url": "/sarah-o-connor",
+                            "submenu": null
+                          },
+                          {
                             "label": "David Pilling",
                             "url": "/comment/columnists/davidpilling",
                             "submenu": null
@@ -594,6 +614,11 @@ export default {
                           {
                             "label": "Robert Shrimsley",
                             "url": "/comment/columnists/robert-shrimsley",
+                            "submenu": null
+                          },
+                          {
+                            "label": "Michael Skapinker",
+                            "url": "/michael-skapinker",
                             "submenu": null
                           },
                           {
@@ -993,13 +1018,13 @@ export default {
                 "submenu": null
               },
               {
-                "label": "ePaper",
+                "label": "Today's Newspaper (ePaper)",
                 "url": "http://www.ft.com/uk-edition",
                 "submenu": null
               },
               {
                 "label": "Crossword",
-                "url": "http://www.ft.com/life-arts/crossword?ft_site=falcon&desktop=true",
+                "url": "https://www.ft.com/crossword",
                 "submenu": null
               }
             ]
@@ -1151,11 +1176,6 @@ export default {
                     {
                       "label": "US Companies",
                       "url": "/companies/us",
-                      "submenu": null
-                    },
-                    {
-                      "label": "US Election 2016",
-                      "url": "/us-election-2016",
                       "submenu": null
                     }
                   ]
@@ -1508,13 +1528,28 @@ export default {
                             "submenu": null
                           },
                           {
+                            "label": "Rana Foroohar",
+                            "url": "/rana-foroohar",
+                            "submenu": null
+                          },
+                          {
                             "label": "Janan Ganesh",
                             "url": "/comment/columnists/janan-ganesh",
                             "submenu": null
                           },
                           {
+                            "label": "David Gardner",
+                            "url": "/david-gardner",
+                            "submenu": null
+                          },
+                          {
                             "label": "John Gapper",
                             "url": "/comment/columnists/john-gapper",
+                            "submenu": null
+                          },
+                          {
+                            "label": "Izabella Kaminska",
+                            "url": "/izabella-kaminska",
                             "submenu": null
                           },
                           {
@@ -1543,6 +1578,11 @@ export default {
                             "submenu": null
                           },
                           {
+                            "label": "Sarah O'Connor",
+                            "url": "/sarah-o-connor",
+                            "submenu": null
+                          },
+                          {
                             "label": "David Pilling",
                             "url": "/comment/columnists/davidpilling",
                             "submenu": null
@@ -1565,6 +1605,11 @@ export default {
                           {
                             "label": "Robert Shrimsley",
                             "url": "/comment/columnists/robert-shrimsley",
+                            "submenu": null
+                          },
+                          {
+                            "label": "Michael Skapinker",
+                            "url": "/michael-skapinker",
                             "submenu": null
                           },
                           {
@@ -1964,13 +2009,13 @@ export default {
                 "submenu": null
               },
               {
-                "label": "ePaper",
+                "label": "Today's Newspaper (ePaper)",
                 "url": "http://www.ft.com/uk-edition",
                 "submenu": null
               },
               {
                 "label": "Crossword",
-                "url": "http://www.ft.com/life-arts/crossword?ft_site=falcon&desktop=true",
+                "url": "https://www.ft.com/crossword",
                 "submenu": null
               }
             ]
@@ -2096,14 +2141,14 @@ export default {
             "items": [
               [
                 {
-                  "label": "Share News Tips Securely",
-                  "url": "/securedrop",
-                  "disableTracking": true,
+                  "label": "FT Live",
+                  "url": "http://live.ft.com/",
                   "submenu": null
                 },
                 {
-                  "label": "Conferences & Events",
-                  "url": "http://live.ft.com/",
+                  "label": "Share News Tips Securely",
+                  "url": "/securedrop",
+                  "disableTracking": true,
                   "submenu": null
                 },
                 {
@@ -2170,7 +2215,7 @@ export default {
                   "submenu": null
                 },
                 {
-                  "label": "ePaper",
+                  "label": "Today's Newspaper (ePaper)",
                   "url": "http://www.ft.com/uk-edition",
                   "submenu": null
                 },
@@ -2514,24 +2559,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "India dents UK trade hopes with lapsed deal",
-                  "url": "/content/5fef7796-1914-11e7-a53d-df09f373be87"
+                  "label": "French election results: Macron’s victory in charts",
+                  "url": "/content/62d782d6-31a7-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "Steve Bannon removed from National Security Council role",
-                  "url": "/content/c0fb2266-1a1c-11e7-bcac-6d03d067f81f"
+                  "label": "British passport applications from EU residents up by a third",
+                  "url": "/content/5cb90646-2ff8-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "A conversation with Donald Trump in the Oval Office",
-                  "url": "/content/353ef4e0-1a13-11e7-bcac-6d03d067f81f"
+                  "label": "Trump was warned twice on risk of Russia blackmailing Flynn",
+                  "url": "/content/8880e674-3433-11e7-99bd-13beb0903fa3"
                 },
                 {
-                  "label": "Donald Trump warns China the US is ready to tackle North Korea",
-                  "url": "/content/4d9f65d6-17bd-11e7-9c35-0dd2cb31823a"
+                  "label": "Macron’s policies on Europe, trade, immigration and defence",
+                  "url": "/content/37223e92-3319-11e7-bce4-9023f8c0fd2e"
                 },
                 {
-                  "label": "FBI plans to create special unit to co-ordinate Russia probe",
-                  "url": "/content/40498d94-155b-11e7-80f4-13e067d5072c"
+                  "label": "Merkel rules out eased eurozone spending rules to help Macron",
+                  "url": "/content/2d3004a2-33ee-11e7-bce4-9023f8c0fd2e"
                 }
               ]
             }
@@ -2597,24 +2642,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "India dents UK trade hopes with lapsed deal",
-                  "url": "/content/5fef7796-1914-11e7-a53d-df09f373be87"
+                  "label": "Warnings of staff relocations after Brexit rise sharply",
+                  "url": "/content/8c4392d6-3409-11e7-bce4-9023f8c0fd2e"
                 },
                 {
-                  "label": "Theresa May begins to dismantle Brexit roadblocks",
-                  "url": "/content/32080204-1a17-11e7-bcac-6d03d067f81f"
+                  "label": "British passport applications from EU residents up by a third",
+                  "url": "/content/5cb90646-2ff8-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "The ‘Brexit betrayal’ poses a hazard for Theresa May",
-                  "url": "/content/79c75f54-1963-11e7-a53d-df09f373be87"
+                  "label": "Deep divisions at Labour headquarters hit UK election hopes",
+                  "url": "/content/9db2a95c-30e0-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "UK’s new tax year and the changes you need to know about",
-                  "url": "/content/e4b7d006-192b-11e7-a53d-df09f373be87"
+                  "label": "May’s foreign policy cannot be judged by its electoral effect",
+                  "url": "/content/330b82c6-33d9-11e7-99bd-13beb0903fa3"
                 },
                 {
-                  "label": "Theresa May suggests EU migration will continue post-Brexit",
-                  "url": "/content/853e78ae-1945-11e7-a53d-df09f373be87"
+                  "label": "MacKenzie heads for Sun exit as Murdoch’s old guard swept away",
+                  "url": "/content/54c7ecee-33ff-11e7-bce4-9023f8c0fd2e"
                 }
               ]
             }
@@ -3038,24 +3083,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "Pepsi withdraws Kendall Jenner ad after social media backlash",
-                  "url": "/content/3c811b64-1a33-11e7-a266-12672483791a"
+                  "label": "Goldman shakes up investment bank leadership",
+                  "url": "/content/775f6b7c-340b-11e7-99bd-13beb0903fa3"
                 },
                 {
-                  "label": "Unilever restructures to shore up investor support after failed Kraft bid",
-                  "url": "/content/173695cc-1a98-11e7-a266-12672483791a"
+                  "label": "Warnings of staff relocations after Brexit rise sharply",
+                  "url": "/content/8c4392d6-3409-11e7-bce4-9023f8c0fd2e"
                 },
                 {
-                  "label": "Air India future in doubt as auditors’ report raises concerns",
-                  "url": "/content/4f084b90-0ebc-11e7-b030-768954394623"
+                  "label": "Brexit process will expose basic weakness in European banking",
+                  "url": "/content/739f9852-3331-11e7-99bd-13beb0903fa3"
                 },
                 {
-                  "label": "Mitsubishi to play key role in global assault on car giants",
-                  "url": "/content/3da59b62-15df-11e7-80f4-13e067d5072c"
+                  "label": "Volkswagen plans to ‘leapfrog’ Tesla in electric car race",
+                  "url": "/content/a43ac2ce-3198-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "Nintendo and Sony lead charge as games consoles return to battle",
-                  "url": "/content/dd64e82c-eec7-11e6-ba01-119a44939bb6"
+                  "label": "ChemChina and Sinochem plan merger",
+                  "url": "/content/08a29238-2ed2-11e7-9555-23ef563ecf9a"
                 }
               ]
             }
@@ -3305,24 +3350,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "Steven Cohen invests in start-up aiming to shake up bank research",
-                  "url": "/content/0d6ed900-1980-11e7-9c35-0dd2cb31823a"
+                  "label": "Risk of dollar shortage hits investors’ radar",
+                  "url": "/content/4ea2e24c-30b2-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "Wall St goes into reverse as risk appetite fades",
-                  "url": "/content/3bc7c770-19a4-11e7-9c35-0dd2cb31823a"
+                  "label": "Opec and Russia poised to roll over oil output cuts",
+                  "url": "/content/9d0c4e06-33d6-11e7-bce4-9023f8c0fd2e"
                 },
                 {
-                  "label": "Oil prices flirt with 1-month peak as US inventories rise",
-                  "url": "/content/dd673dc4-19e8-11e7-a266-12672483791a"
+                  "label": "Italy’s bad debt problem refuses to go away",
+                  "url": "/content/5be3608c-3182-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "‘Crowdsourced’ Quantopian dives into algorithms",
-                  "url": "/content/b88e6830-1969-11e7-9c35-0dd2cb31823a"
+                  "label": "Euro and stocks slip after French election result",
+                  "url": "/content/bf20f612-338c-11e7-99bd-13beb0903fa3"
                 },
                 {
-                  "label": "Wall Street set for soft start in wake of Fed minutes",
-                  "url": "/content/494e4386-1a6e-11e7-a266-12672483791a"
+                  "label": "Wall Street’s fear gauge falls to lowest level since 1993",
+                  "url": "/content/456629ce-343a-11e7-bce4-9023f8c0fd2e"
                 }
               ]
             }
@@ -3356,13 +3401,28 @@ export default {
                       "submenu": null
                     },
                     {
+                      "label": "Rana Foroohar",
+                      "url": "/rana-foroohar",
+                      "submenu": null
+                    },
+                    {
                       "label": "Janan Ganesh",
                       "url": "/comment/columnists/janan-ganesh",
                       "submenu": null
                     },
                     {
+                      "label": "David Gardner",
+                      "url": "/david-gardner",
+                      "submenu": null
+                    },
+                    {
                       "label": "John Gapper",
                       "url": "/comment/columnists/john-gapper",
+                      "submenu": null
+                    },
+                    {
+                      "label": "Izabella Kaminska",
+                      "url": "/izabella-kaminska",
                       "submenu": null
                     },
                     {
@@ -3391,6 +3451,11 @@ export default {
                       "submenu": null
                     },
                     {
+                      "label": "Sarah O'Connor",
+                      "url": "/sarah-o-connor",
+                      "submenu": null
+                    },
+                    {
                       "label": "David Pilling",
                       "url": "/comment/columnists/davidpilling",
                       "submenu": null
@@ -3413,6 +3478,11 @@ export default {
                     {
                       "label": "Robert Shrimsley",
                       "url": "/comment/columnists/robert-shrimsley",
+                      "submenu": null
+                    },
+                    {
+                      "label": "Michael Skapinker",
+                      "url": "/michael-skapinker",
                       "submenu": null
                     },
                     {
@@ -3523,13 +3593,28 @@ export default {
                           "submenu": null
                         },
                         {
+                          "label": "Rana Foroohar",
+                          "url": "/rana-foroohar",
+                          "submenu": null
+                        },
+                        {
                           "label": "Janan Ganesh",
                           "url": "/comment/columnists/janan-ganesh",
                           "submenu": null
                         },
                         {
+                          "label": "David Gardner",
+                          "url": "/david-gardner",
+                          "submenu": null
+                        },
+                        {
                           "label": "John Gapper",
                           "url": "/comment/columnists/john-gapper",
+                          "submenu": null
+                        },
+                        {
+                          "label": "Izabella Kaminska",
+                          "url": "/izabella-kaminska",
                           "submenu": null
                         },
                         {
@@ -3558,6 +3643,11 @@ export default {
                           "submenu": null
                         },
                         {
+                          "label": "Sarah O'Connor",
+                          "url": "/sarah-o-connor",
+                          "submenu": null
+                        },
+                        {
                           "label": "David Pilling",
                           "url": "/comment/columnists/davidpilling",
                           "submenu": null
@@ -3580,6 +3670,11 @@ export default {
                         {
                           "label": "Robert Shrimsley",
                           "url": "/comment/columnists/robert-shrimsley",
+                          "submenu": null
+                        },
+                        {
+                          "label": "Michael Skapinker",
+                          "url": "/michael-skapinker",
                           "submenu": null
                         },
                         {
@@ -3666,24 +3761,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "Beware of the return of the Clinton dynasty",
-                  "url": "/content/e63646c4-1962-11e7-a53d-df09f373be87"
+                  "label": "Why Emmanuel Macron matters to the whole world",
+                  "url": "/content/cbbb9a5a-33c6-11e7-bce4-9023f8c0fd2e"
                 },
                 {
-                  "label": "Federal probe into Fox News casts shadow over Murdoch empire",
-                  "url": "/content/26ce771c-1916-11e7-9c35-0dd2cb31823a"
+                  "label": "May’s foreign policy cannot be judged by its electoral effect",
+                  "url": "/content/330b82c6-33d9-11e7-99bd-13beb0903fa3"
                 },
                 {
-                  "label": "A conversation with Donald Trump in the Oval Office",
-                  "url": "/content/353ef4e0-1a13-11e7-bcac-6d03d067f81f"
+                  "label": "Iraq fears for its future once Isis falls",
+                  "url": "/content/6eedad00-1f66-11e7-a454-ab04428977f9"
                 },
                 {
-                  "label": "Singapore is not quite what Brexiters think it is",
-                  "url": "/content/9f6eeb64-1864-11e7-a53d-df09f373be87"
+                  "label": "The lean and mean approach of 3G Capital",
+                  "url": "/content/268f73e6-31a3-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "The ‘Brexit betrayal’ poses a hazard for Theresa May",
-                  "url": "/content/79c75f54-1963-11e7-a53d-df09f373be87"
+                  "label": "Emmanuel Macron sets his sights on economic and eurozone reforms",
+                  "url": "/content/da3404fc-3365-11e7-bce4-9023f8c0fd2e"
                 }
               ]
             }
@@ -3787,24 +3882,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "Don’t blame millennials if you can’t hang on to them ",
-                  "url": "/content/0c7ed03a-fbeb-11e5-8f41-df5bda8beb40"
+                  "label": "There is nothing cute about innumeracy",
+                  "url": "/content/3174d5ce-30e7-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "My pen pals, the white-collar criminals in jail",
-                  "url": "/content/7e237642-8583-11e6-8897-2359a58ac7a5"
+                  "label": "Harvard and its business school acolytes are due a rethink",
+                  "url": "/content/104359b4-3166-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "Financial Times business books of the month: April edition",
-                  "url": "/content/49fd391a-108f-11e7-b030-768954394623"
+                  "label": "Why paternal age matters to children’s health",
+                  "url": "/content/bd42df1a-3303-11e7-99bd-13beb0903fa3"
                 },
                 {
-                  "label": "Foreign pilots are failing at English — but so are the Brits",
-                  "url": "/content/c4012d50-186b-11e7-a53d-df09f373be87"
+                  "label": "Unrealistic expectations put millennials at risk of burnout",
+                  "url": "/content/be3289be-2c3e-11e7-bc4b-5528796fe35c"
                 },
                 {
-                  "label": "MBAs vs hackers: leaders of the future learn to fight cyber crime",
-                  "url": "/content/959e9faa-19e3-11e7-a266-12672483791a"
+                  "label": "Artificial intelligence closes in on the work of junior lawyers",
+                  "url": "/content/f809870c-26a1-11e7-8691-d5f7e0cd0a16"
                 }
               ]
             }
@@ -4132,24 +4227,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "Salmon and the single man",
-                  "url": "/content/fed852bc-18bd-11e7-a53d-df09f373be87"
+                  "label": "The charm of Mme Macron: a little bit of Essex in the Elysée Palace",
+                  "url": "/content/2474c1ca-319d-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "London’s rivals: what Frankfurt can offer buyers quitting the UK",
-                  "url": "/content/120f085c-1536-11e7-b0c1-37e417ee6c76"
+                  "label": "Did South Park accidentally invent the alt-right?",
+                  "url": "/content/c69fa756-30be-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "Why real estate investors should follow global population trends",
-                  "url": "/content/c225ddde-d85b-11e4-ba53-00144feab7de"
+                  "label": "The siege of western liberalism",
+                  "url": "/content/c7444248-3000-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "Seth Dei, the Ghanaian investor behind fruit exporter Blue Skies",
-                  "url": "/content/705b1674-152e-11e7-b0c1-37e417ee6c76"
+                  "label": "What To Do When Machines Do Everything by Malcolm Frank et al, Paul Roehrig, and Ben Pring",
+                  "url": "/content/f4251416-2a76-11e7-bc4b-5528796fe35c"
                 },
                 {
-                  "label": "Would you wear a £200 wedding dress?",
-                  "url": "/content/710f22b4-1564-11e7-80f4-13e067d5072c"
+                  "label": "One suitcase, two lives: the rise of the weekly commuter",
+                  "url": "/content/4fd8769c-2f89-11e7-9555-23ef563ecf9a"
                 }
               ]
             }
@@ -4399,24 +4494,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "India dents UK trade hopes with lapsed deal",
-                  "url": "/content/5fef7796-1914-11e7-a53d-df09f373be87"
+                  "label": "French election results: Macron’s victory in charts",
+                  "url": "/content/62d782d6-31a7-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "Steve Bannon removed from National Security Council role",
-                  "url": "/content/c0fb2266-1a1c-11e7-bcac-6d03d067f81f"
+                  "label": "British passport applications from EU residents up by a third",
+                  "url": "/content/5cb90646-2ff8-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "A conversation with Donald Trump in the Oval Office",
-                  "url": "/content/353ef4e0-1a13-11e7-bcac-6d03d067f81f"
+                  "label": "Trump was warned twice on risk of Russia blackmailing Flynn",
+                  "url": "/content/8880e674-3433-11e7-99bd-13beb0903fa3"
                 },
                 {
-                  "label": "Donald Trump warns China the US is ready to tackle North Korea",
-                  "url": "/content/4d9f65d6-17bd-11e7-9c35-0dd2cb31823a"
+                  "label": "Macron’s policies on Europe, trade, immigration and defence",
+                  "url": "/content/37223e92-3319-11e7-bce4-9023f8c0fd2e"
                 },
                 {
-                  "label": "FBI plans to create special unit to co-ordinate Russia probe",
-                  "url": "/content/40498d94-155b-11e7-80f4-13e067d5072c"
+                  "label": "Merkel rules out eased eurozone spending rules to help Macron",
+                  "url": "/content/2d3004a2-33ee-11e7-bce4-9023f8c0fd2e"
                 }
               ]
             }
@@ -4442,11 +4537,6 @@ export default {
                 "label": "US Companies",
                 "url": "/companies/us",
                 "submenu": null
-              },
-              {
-                "label": "US Election 2016",
-                "url": "/us-election-2016",
-                "submenu": null
               }
             ]
           },
@@ -4465,22 +4555,17 @@ export default {
                     "label": "US Economy",
                     "url": "/global-economy/us",
                     "submenu": null
-                  },
-                  {
-                    "label": "US Politics & Policy",
-                    "url": "/world/us/politics",
-                    "submenu": null
                   }
                 ],
                 [
                   {
-                    "label": "US Companies",
-                    "url": "/companies/us",
+                    "label": "US Politics & Policy",
+                    "url": "/world/us/politics",
                     "submenu": null
                   },
                   {
-                    "label": "US Election 2016",
-                    "url": "/us-election-2016",
+                    "label": "US Companies",
+                    "url": "/companies/us",
                     "submenu": null
                   }
                 ]
@@ -4492,24 +4577,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "Beware of the return of the Clinton dynasty",
-                  "url": "/content/e63646c4-1962-11e7-a53d-df09f373be87"
+                  "label": "Trump was warned twice on risk of Russia blackmailing Flynn",
+                  "url": "/content/8880e674-3433-11e7-99bd-13beb0903fa3"
                 },
                 {
-                  "label": "Steve Bannon removed from National Security Council role",
-                  "url": "/content/c0fb2266-1a1c-11e7-bcac-6d03d067f81f"
+                  "label": "Trump visa crackdown spurs tech moves to Mexico",
+                  "url": "/content/7d8e3a2e-302c-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "A conversation with Donald Trump in the Oval Office",
-                  "url": "/content/353ef4e0-1a13-11e7-bcac-6d03d067f81f"
+                  "label": "Duterte plays cat-and-mouse game with US and China",
+                  "url": "/content/4375d4ee-340c-11e7-bce4-9023f8c0fd2e"
                 },
                 {
-                  "label": "Donald Trump warns China the US is ready to tackle North Korea",
-                  "url": "/content/4d9f65d6-17bd-11e7-9c35-0dd2cb31823a"
+                  "label": "Foreign students shun US over Trump",
+                  "url": "/content/eba11d8a-319c-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "FBI plans to create special unit to co-ordinate Russia probe",
-                  "url": "/content/40498d94-155b-11e7-80f4-13e067d5072c"
+                  "label": "Less is more when it comes to Federal Reserve policy",
+                  "url": "/content/ab77d236-318c-11e7-9555-23ef563ecf9a"
                 }
               ]
             }
@@ -4933,24 +5018,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "Pepsi withdraws Kendall Jenner ad after social media backlash",
-                  "url": "/content/3c811b64-1a33-11e7-a266-12672483791a"
+                  "label": "Goldman shakes up investment bank leadership",
+                  "url": "/content/775f6b7c-340b-11e7-99bd-13beb0903fa3"
                 },
                 {
-                  "label": "Unilever restructures to shore up investor support after failed Kraft bid",
-                  "url": "/content/173695cc-1a98-11e7-a266-12672483791a"
+                  "label": "Warnings of staff relocations after Brexit rise sharply",
+                  "url": "/content/8c4392d6-3409-11e7-bce4-9023f8c0fd2e"
                 },
                 {
-                  "label": "Air India future in doubt as auditors’ report raises concerns",
-                  "url": "/content/4f084b90-0ebc-11e7-b030-768954394623"
+                  "label": "Brexit process will expose basic weakness in European banking",
+                  "url": "/content/739f9852-3331-11e7-99bd-13beb0903fa3"
                 },
                 {
-                  "label": "Mitsubishi to play key role in global assault on car giants",
-                  "url": "/content/3da59b62-15df-11e7-80f4-13e067d5072c"
+                  "label": "Volkswagen plans to ‘leapfrog’ Tesla in electric car race",
+                  "url": "/content/a43ac2ce-3198-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "Nintendo and Sony lead charge as games consoles return to battle",
-                  "url": "/content/dd64e82c-eec7-11e6-ba01-119a44939bb6"
+                  "label": "ChemChina and Sinochem plan merger",
+                  "url": "/content/08a29238-2ed2-11e7-9555-23ef563ecf9a"
                 }
               ]
             }
@@ -5200,24 +5285,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "Steven Cohen invests in start-up aiming to shake up bank research",
-                  "url": "/content/0d6ed900-1980-11e7-9c35-0dd2cb31823a"
+                  "label": "Risk of dollar shortage hits investors’ radar",
+                  "url": "/content/4ea2e24c-30b2-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "Wall St goes into reverse as risk appetite fades",
-                  "url": "/content/3bc7c770-19a4-11e7-9c35-0dd2cb31823a"
+                  "label": "Opec and Russia poised to roll over oil output cuts",
+                  "url": "/content/9d0c4e06-33d6-11e7-bce4-9023f8c0fd2e"
                 },
                 {
-                  "label": "Oil prices flirt with 1-month peak as US inventories rise",
-                  "url": "/content/dd673dc4-19e8-11e7-a266-12672483791a"
+                  "label": "Italy’s bad debt problem refuses to go away",
+                  "url": "/content/5be3608c-3182-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "‘Crowdsourced’ Quantopian dives into algorithms",
-                  "url": "/content/b88e6830-1969-11e7-9c35-0dd2cb31823a"
+                  "label": "Euro and stocks slip after French election result",
+                  "url": "/content/bf20f612-338c-11e7-99bd-13beb0903fa3"
                 },
                 {
-                  "label": "Wall Street set for soft start in wake of Fed minutes",
-                  "url": "/content/494e4386-1a6e-11e7-a266-12672483791a"
+                  "label": "Wall Street’s fear gauge falls to lowest level since 1993",
+                  "url": "/content/456629ce-343a-11e7-bce4-9023f8c0fd2e"
                 }
               ]
             }
@@ -5251,13 +5336,28 @@ export default {
                       "submenu": null
                     },
                     {
+                      "label": "Rana Foroohar",
+                      "url": "/rana-foroohar",
+                      "submenu": null
+                    },
+                    {
                       "label": "Janan Ganesh",
                       "url": "/comment/columnists/janan-ganesh",
                       "submenu": null
                     },
                     {
+                      "label": "David Gardner",
+                      "url": "/david-gardner",
+                      "submenu": null
+                    },
+                    {
                       "label": "John Gapper",
                       "url": "/comment/columnists/john-gapper",
+                      "submenu": null
+                    },
+                    {
+                      "label": "Izabella Kaminska",
+                      "url": "/izabella-kaminska",
                       "submenu": null
                     },
                     {
@@ -5286,6 +5386,11 @@ export default {
                       "submenu": null
                     },
                     {
+                      "label": "Sarah O'Connor",
+                      "url": "/sarah-o-connor",
+                      "submenu": null
+                    },
+                    {
                       "label": "David Pilling",
                       "url": "/comment/columnists/davidpilling",
                       "submenu": null
@@ -5308,6 +5413,11 @@ export default {
                     {
                       "label": "Robert Shrimsley",
                       "url": "/comment/columnists/robert-shrimsley",
+                      "submenu": null
+                    },
+                    {
+                      "label": "Michael Skapinker",
+                      "url": "/michael-skapinker",
                       "submenu": null
                     },
                     {
@@ -5418,13 +5528,28 @@ export default {
                           "submenu": null
                         },
                         {
+                          "label": "Rana Foroohar",
+                          "url": "/rana-foroohar",
+                          "submenu": null
+                        },
+                        {
                           "label": "Janan Ganesh",
                           "url": "/comment/columnists/janan-ganesh",
                           "submenu": null
                         },
                         {
+                          "label": "David Gardner",
+                          "url": "/david-gardner",
+                          "submenu": null
+                        },
+                        {
                           "label": "John Gapper",
                           "url": "/comment/columnists/john-gapper",
+                          "submenu": null
+                        },
+                        {
+                          "label": "Izabella Kaminska",
+                          "url": "/izabella-kaminska",
                           "submenu": null
                         },
                         {
@@ -5453,6 +5578,11 @@ export default {
                           "submenu": null
                         },
                         {
+                          "label": "Sarah O'Connor",
+                          "url": "/sarah-o-connor",
+                          "submenu": null
+                        },
+                        {
                           "label": "David Pilling",
                           "url": "/comment/columnists/davidpilling",
                           "submenu": null
@@ -5475,6 +5605,11 @@ export default {
                         {
                           "label": "Robert Shrimsley",
                           "url": "/comment/columnists/robert-shrimsley",
+                          "submenu": null
+                        },
+                        {
+                          "label": "Michael Skapinker",
+                          "url": "/michael-skapinker",
                           "submenu": null
                         },
                         {
@@ -5561,24 +5696,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "Beware of the return of the Clinton dynasty",
-                  "url": "/content/e63646c4-1962-11e7-a53d-df09f373be87"
+                  "label": "Why Emmanuel Macron matters to the whole world",
+                  "url": "/content/cbbb9a5a-33c6-11e7-bce4-9023f8c0fd2e"
                 },
                 {
-                  "label": "Federal probe into Fox News casts shadow over Murdoch empire",
-                  "url": "/content/26ce771c-1916-11e7-9c35-0dd2cb31823a"
+                  "label": "May’s foreign policy cannot be judged by its electoral effect",
+                  "url": "/content/330b82c6-33d9-11e7-99bd-13beb0903fa3"
                 },
                 {
-                  "label": "A conversation with Donald Trump in the Oval Office",
-                  "url": "/content/353ef4e0-1a13-11e7-bcac-6d03d067f81f"
+                  "label": "Iraq fears for its future once Isis falls",
+                  "url": "/content/6eedad00-1f66-11e7-a454-ab04428977f9"
                 },
                 {
-                  "label": "Singapore is not quite what Brexiters think it is",
-                  "url": "/content/9f6eeb64-1864-11e7-a53d-df09f373be87"
+                  "label": "The lean and mean approach of 3G Capital",
+                  "url": "/content/268f73e6-31a3-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "The ‘Brexit betrayal’ poses a hazard for Theresa May",
-                  "url": "/content/79c75f54-1963-11e7-a53d-df09f373be87"
+                  "label": "Emmanuel Macron sets his sights on economic and eurozone reforms",
+                  "url": "/content/da3404fc-3365-11e7-bce4-9023f8c0fd2e"
                 }
               ]
             }
@@ -5682,24 +5817,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "Don’t blame millennials if you can’t hang on to them ",
-                  "url": "/content/0c7ed03a-fbeb-11e5-8f41-df5bda8beb40"
+                  "label": "There is nothing cute about innumeracy",
+                  "url": "/content/3174d5ce-30e7-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "My pen pals, the white-collar criminals in jail",
-                  "url": "/content/7e237642-8583-11e6-8897-2359a58ac7a5"
+                  "label": "Harvard and its business school acolytes are due a rethink",
+                  "url": "/content/104359b4-3166-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "Financial Times business books of the month: April edition",
-                  "url": "/content/49fd391a-108f-11e7-b030-768954394623"
+                  "label": "Why paternal age matters to children’s health",
+                  "url": "/content/bd42df1a-3303-11e7-99bd-13beb0903fa3"
                 },
                 {
-                  "label": "Foreign pilots are failing at English — but so are the Brits",
-                  "url": "/content/c4012d50-186b-11e7-a53d-df09f373be87"
+                  "label": "Unrealistic expectations put millennials at risk of burnout",
+                  "url": "/content/be3289be-2c3e-11e7-bc4b-5528796fe35c"
                 },
                 {
-                  "label": "MBAs vs hackers: leaders of the future learn to fight cyber crime",
-                  "url": "/content/959e9faa-19e3-11e7-a266-12672483791a"
+                  "label": "Artificial intelligence closes in on the work of junior lawyers",
+                  "url": "/content/f809870c-26a1-11e7-8691-d5f7e0cd0a16"
                 }
               ]
             }
@@ -6027,24 +6162,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "Salmon and the single man",
-                  "url": "/content/fed852bc-18bd-11e7-a53d-df09f373be87"
+                  "label": "The charm of Mme Macron: a little bit of Essex in the Elysée Palace",
+                  "url": "/content/2474c1ca-319d-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "London’s rivals: what Frankfurt can offer buyers quitting the UK",
-                  "url": "/content/120f085c-1536-11e7-b0c1-37e417ee6c76"
+                  "label": "Did South Park accidentally invent the alt-right?",
+                  "url": "/content/c69fa756-30be-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "Why real estate investors should follow global population trends",
-                  "url": "/content/c225ddde-d85b-11e4-ba53-00144feab7de"
+                  "label": "The siege of western liberalism",
+                  "url": "/content/c7444248-3000-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "Seth Dei, the Ghanaian investor behind fruit exporter Blue Skies",
-                  "url": "/content/705b1674-152e-11e7-b0c1-37e417ee6c76"
+                  "label": "What To Do When Machines Do Everything by Malcolm Frank et al, Paul Roehrig, and Ben Pring",
+                  "url": "/content/f4251416-2a76-11e7-bc4b-5528796fe35c"
                 },
                 {
-                  "label": "Would you wear a £200 wedding dress?",
-                  "url": "/content/710f22b4-1564-11e7-80f4-13e067d5072c"
+                  "label": "One suitcase, two lives: the rise of the weekly commuter",
+                  "url": "/content/4fd8769c-2f89-11e7-9555-23ef563ecf9a"
                 }
               ]
             }
