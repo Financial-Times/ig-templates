@@ -1,0 +1,12 @@
+{{! this partial should be passed an object with url, alt, and ratio }}
+{{#if url}}
+<figure class="graphics-article__content-image" alt="{{alt}}">
+  <div{{#if ratio}} style="padding-bottom: {{convertRatioToPercentage ratio}}"{{/if}}>
+    <img
+      alt="{{alt}}"
+      srcset="{{imageServiceSrcset url '700,620' }}"
+      sizes="(min-width: 76.25em) 700px, (min-width: 61.25em) 620px, (min-width: 46.25em) 700px, calc(100vw - 20px)">
+  </div>
+  {{#caption}}<figcaption>{{caption }}</figcaption>{{/caption}}
+</figure>
+{{/if}}

@@ -1,0 +1,86 @@
+<a data-trackable="a11y-survey-screen-reader" class="n-skip-link" href="https://www.ft.com/accessibility">Accessibility help</a>
+<a data-trackable="a11y-skip-to-navigation" class="n-skip-link" href="#site-navigation">Skip to navigation</a>
+<a data-trackable="a11y-skip-to-content" class="n-skip-link" href="#site-content">Skip to content</a>
+<a data-trackable="a11y-skip-to-footer" class="n-skip-link" href="#site-footer">Skip to footer</a>
+
+{{!-- {{#if content.before}}
+	<div class="o-header-before">{{{content.before}}}</div>
+{{/if}} --}}
+{{!-- {{#unlessEquals nUi.header.variant 'logo-only'}}
+	{{> n-ui/header/partials/marketing-promo/template}}
+{{/unlessEquals}} --}}
+
+{{!-- {{#ifEquals @root.viewStyle 'compact'}}
+<header id="site-navigation" class="o-header o-header--simple" data-o-component="o-header" data-o-header--no-js tabindex="-1">
+{{else}} --}}
+<header id="site-navigation" class="o-header o-header--simple" data-o-component="o-header" data-o-header--no-js tabindex="-1">
+{{!-- {{/ifEquals}} --}}
+
+
+	{{!-- {{#ifEquals nUi.header.variant 'logo-only'}}
+		{{> n-ui/header/partials/header/top}}
+	{{else}} --}}
+  <div class="o-header__row o-header__anon" data-trackable="header-anon">
+    <ul class="o-header__anon-list">
+
+      {{!-- {{#each navigation.menus.navbar-right-anon.items}}
+      <li class="o-header__anon-item">
+        <a class="o-header__anon-link" href="{{url}}" data-trackable="{{label}}">{{label}}</a>
+      </li>
+      {{/each}} --}}
+    </ul>
+  </div>
+
+		{{!-- {{> n-ui/header/partials/header/top}} --}}
+		<div class="o-header__row o-header__top" data-trackable="header-top">
+			<div class="o-header__container">
+				<div class="o-header__top-wrapper">
+					{{!-- {{#unlessEquals nUi.header.variant 'logo-only'}} --}}
+						<div class="o-header__top-column o-header__top-column--left">
+
+							<a href="#o-header-drawer" class="o-header__top-link o-header__top-link--menu" aria-controls="o-header-drawer" title="Open drawer menu" aria-label="Open drawer menu" data-trackable="drawer-toggle">
+								<span class="o-header__top-link-label">Menu</span>
+							</a>
+
+							<a href="#o-header-search-primary" class="o-header__top-link o-header__top-link--search" aria-controls="o-header-search-primary" title="Search" aria-label="Search" data-trackable="search-toggle">
+								<span class="o-header__top-link-label">Search</span>
+							</a>
+						</div>
+					{{!-- {{/unlessEquals}} --}}
+					<div class="o-header__top-column o-header__top-column--center">
+						<a class="o-header__top-logo" data-trackable="logo" href="{{resolveURL '/'}}" title="Go to Financial Times homepage">
+							<span class="o-header__visually-hidden">Financial Times</span>
+						</a>
+					</div>
+					{{!-- {{#unlessEquals nUi.header.variant 'logo-only'}} --}}
+						<div class="o-header__top-column o-header__top-column--right">
+							<span class="o-header__top-link--myft__container">
+								<a class="o-header__top-link o-header__top-link--myft" href="{{resolveURL '/myft'}}" data-trackable="my-ft" data-tour-stage="myFt" aria-label="My F T">
+									<span class="o-header__visually-hidden">myFT</span>
+								</a>
+							</span>
+						</div>
+					{{!-- {{/unlessEquals}} --}}
+				</div>
+			</div>
+		</div>
+
+
+		<div id="o-header-search-primary" class="o-header__row o-header__search o-header__search--primary" data-trackable="header-search" data-o-header-search>
+			<div class="o-header__container">
+				<form class="o-header__search-form" action="{{resolveURL '/search'}}" role="search" aria-label="Site search" data-typeahead data-typeahead-categories="tags,equities" data-typeahead-view-all>
+					<label class="o-header__visually-hidden" for="o-header-search-term-primary">Search the <abbr title="Financial Times">FT</abbr></label>
+					<input class="o-header__search-term" id="o-header-search-term-primary" name="q" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-trackable="search-term" placeholder="Search the FT" data-typeahead-input>
+					<button class="o-header__search-submit" type="submit" data-trackable="search-submit">
+						Search
+					</button>
+					<button class="o-header__search-close o--if-js" type="button" aria-controls="o-header-search-primary" title="Close search bar" data-trackable="close">
+						<span class="o-header__visually-hidden">Close</span>
+					</button>
+				</form>
+			</div>
+		</div>
+    {{> pageHeaderNav }}
+</header>
+
+{{> pageHeaderDrawer }}

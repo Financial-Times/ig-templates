@@ -1,0 +1,20 @@
+{{#ifAny updatedTime byline}}
+<p>
+  {{#if updatedTime }}
+  <time
+    class="article__timestamp o-date o-typography-timestamp"
+    data-o-component="o-date" datetime="{{isoTime updatedTime}}"
+    itemprop="datePublished" content="{{isoTime updatedTime}}"
+    data-o-date-js>{{formatTime updatedTime}}</time>
+  {{/if}}
+  {{#if byline }}
+  &#32;<span class="article__byline">by&nbsp;
+  {{#if byline }}
+    {{#each byline}}{{#unless @first}}{{#if @last}} and {{else}}, {{/if}}{{/unless}}{{#if url }}<a href="{{ url }}" class="o-typography-link-topic o-typography-link-topic--small" itemprop="author">{{name}}</a>{{else}}{{ name }}{{/if}}{{/each}}
+  {{else}}
+    {{inlineMarkdown byline}}
+  {{/if}}
+  </span>
+  {{/if}}
+</p>
+{{/ifAny}}

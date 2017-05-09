@@ -1,45 +1,132 @@
 import Directory from 'exhibit-directory';
-import { plugin, withSubset, compose, createMatcher } from 'exhibit';
+import handlebars from 'handlebars';
+import bowerResolve from 'rollup-plugin-bower-resolve';
+import { plugin, withSubset, compose, createMatcher, cache } from 'exhibit';
 import axios from 'axios';
 import fs from 'fs';
+import cssnano from 'cssnano';
+import chalk from 'chalk';
+import prettyBytes from 'pretty-bytes';
 
 const src = new Directory('src');
 const dist = new Directory('dist', { log: true });
 
+src.on('error', (error) => {
+  console.log('src error:', error && error.stack ? error.stack : error);
+});
+
 const isDemoHTML = createMatcher('demo/**/*.html');
+const isDemoHBS = createMatcher('demo/**/*.hbs');
 
 const compile = compose(
   plugin('yaml'),
+
   plugin('sass', {
     root: 'src',
     loadPaths: 'bower_components',
   }),
+
+  plugin('postcss', cssnano({
+    discardComments: {
+      removeAll: true,
+    },
+  }), { map: false }),
+
+  // bundle rollup bundles first
+  withSubset('client/**', compose(
+    plugin('rollup', {
+      match: ['client/**/*.{js,jsx}', '!**/*.main.js'],
+      entry: '**/*.rollup.js',
+      format: 'cjs',
+      root: 'src',
+      external: ['ftdomdelegate', 'dom-delegate'],
+      plugins: [
+        bowerResolve(),
+        // fixes dom-delegate and ftdomdelegate
+        // rollupCommonJS(),
+      ],
+    }),
+
+    // plugin('rename', '**/'
+
+    plugin('babel', { root: 'src' }),
+
+    plugin('browserify', {
+      root: 'src',
+      entry: '**/*.main.js',
+      transforms: ['debowerify'],
+      sourceMap: false,
+    }),
+
+    plugin('uglify'),
+  )),
+
   plugin('babel', { root: 'src', match: 'lib/**/*.js' }),
 
   // build demos in a vm
   plugin('vm', async (files, vm) => {
-    const ftGraphicsUI = vm.runFile('lib/index.js');
+    const { autoRegister } = vm.runFile('lib/index.js');
 
-    // render the nunjucks demos with their respective contexts
-    const outputFiles = await plugin('nunjucks', {
-      root: 'src',
-      nunjucks: ftGraphicsUI.nunjucks,
-      setup: ftGraphicsUI.setupEnv,
-      entry: 'demo/**/*.njk',
-      context: (name, allFiles) => {
-        const localContext = JSON.parse(
-          String(allFiles.get(name.replace(/index\.njk$/, 'context.json')) || '{}'),
-        );
+    const Handlebars = handlebars.create();
 
-        return { ...localContext };
-      },
-    })(files);
+    // register helpers
+    autoRegister(Handlebars);
+
+    const getContext = (name, allFiles) => {
+      const localContext = JSON.parse(
+        String(allFiles.get(name.replace(/index\.hbs/, 'context.json')) || '{}'),
+      );
+
+      return { ...localContext };
+    };
+
+    // render the Handlebars demos with their respective contexts
+    const outputFiles = files.mapEntries(([name, content]) => {
+      const htmlName = name.replace(/\.hbs$/, '.html');
+
+      if (isDemoHBS(name)) {
+        // console.log('HBS!', name);
+        // const compiled = JSON.stringify(getContext(name, files));
+        const context = getContext(name, files);
+
+        // console.log(content.toString(), context);
+
+        let template;
+        try {
+          template = Handlebars.compile(content.toString(), {
+            // strict: true,
+          });
+        } catch (error) {
+          console.log(`Failed to compile template: ${name}`);
+          console.log(error && error.stack ? error.stack : error);
+        }
+
+        let output;
+        try {
+          output = template(context);
+        } catch (error) {
+          console.log(`Failed to render template: ${name}`);
+          console.log(error && error.stack ? error.stack : error);
+          return null;
+        }
+
+        return [htmlName, new Buffer(output)];
+      }
+
+      return [name, content];
+    });
 
     // add the resulting HTML files to our app
     return files.merge(
       outputFiles.filter((content, name) => isDemoHTML(name)),
-    );
+    ).toObject();
   }, { root: 'src' }),
+
+  // report key stats
+  cache((content, name) => {
+    console.log(name, chalk.yellow(prettyBytes(content.length)));
+    return content;
+  }),
 );
 
 export const develop = async () => {

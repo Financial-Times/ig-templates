@@ -1,0 +1,12 @@
+{{#>blankPage}}
+
+{{#*inline "bodyEnd"}}
+  extra stuff at the end!
+{{/inline}}
+
+{{!-- TODO stop using default block content thing; use explicit named blocks only --}}
+<h1>{{title}}</h1>
+<p>built at {{formatTime buildTime}}!!!</p>
+<p>Copyright {{formatTime buildTime '%Y'}} Financial Times.</p>
+
+{{/blankPage}}

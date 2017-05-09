@@ -1,0 +1,15 @@
+{{#if uuid}}
+<div
+  data-o-component="o-comments"
+  id="comments"
+  data-o-comments-auto-init="true"
+  data-o-comments-config-title="{{ headline }}"
+  data-o-comments-config-url="{{ url }}"
+  data-o-comments-config-article-id="{{ uuid }}">
+
+    <div class="o--if-no-js">To participate in this chat, you need to upgrade to a newer web browser. <a href="http://help.ft.com/tools-services/browser-compatibility/">Learn more.</a></div>
+</div>
+<script async src="https://www.ft.com/__origami/service/build/v2/bundles/js?modules=o-comments@^v4.0.0-beta.2"></script>
+<link rel="stylesheet"
+	href="https://www.ft.com/__origami/service/build/v2/bundles/css?modules=o-comments@^v4.0.0-beta.2">
+{{/if}}
