@@ -203,3 +203,7 @@ const _imageServiceSrcset = (
 export const imageServiceSrcset = makePlainHelper(_imageServiceSrcset);
 
 export const percentEncode = makePlainHelper(encodeURIComponent);
+
+export const noBreak = makePlainHelper((text: string) => (
+  new SafeString(text.replace(/ /g, '&nbsp;'))
+));

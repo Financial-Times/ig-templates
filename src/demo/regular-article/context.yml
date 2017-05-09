@@ -36,7 +36,7 @@ scripts:
   - main.js
 
 byline:
-  - name: Fred
+  - name: Fred Smith
     url: http://www.example.com/
   - name: Bob
     url: http://www.example.com/

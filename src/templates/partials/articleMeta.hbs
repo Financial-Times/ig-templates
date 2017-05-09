@@ -10,7 +10,7 @@
   {{#if byline }}
   &#32;<span class="article__byline">by&nbsp;
   {{#if byline }}
-    {{#each byline}}{{#unless @first}}{{#if @last}} and {{else}}, {{/if}}{{/unless}}{{#if url }}<a href="{{ url }}" class="o-typography-link-topic o-typography-link-topic--small" itemprop="author">{{name}}</a>{{else}}{{ name }}{{/if}}{{/each}}
+    {{#each byline}}{{#unless @first}}{{#if @last}} and {{else}}, {{/if}}{{/unless}}{{#if url }}<a href="{{ url }}" class="o-typography-link-topic o-typography-link-topic--small" itemprop="author">{{noBreak name}}</a>{{else}}{{ name }}{{/if}}{{/each}}
   {{else}}
     {{inlineMarkdown byline}}
   {{/if}}
