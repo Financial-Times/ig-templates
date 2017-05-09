@@ -7,13 +7,13 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: project-{{ checksum "yarn.lock" }}-{{ checksum "bower.json" }}
+          key: project-{{ checksum "yarn.lock" }}
       - run:
           name: Install dependencies
           # manually building node-sass seems to be necessary in docker
           command: yarn && npm rebuild node-sass
       - save_cache:
-          key: project-{{ checksum "yarn.lock" }}-{{ checksum "bower.json" }}
+          key: project-{{ checksum "yarn.lock" }}
           paths:
             - node_modules/
             - bower_components/
