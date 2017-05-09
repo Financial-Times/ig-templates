@@ -8,7 +8,10 @@ jobs:
       - checkout
       - restore_cache:
           key: project-{{ checksum "yarn.lock" }}
-      - run: yarn
+      - run:
+        name: Install dependencies
+        # manually building node-sass seems to be necessary in docker
+        command: yarn && npm rebuild node-sass
       - save_cache:
           key: project-{{ checksum "yarn.lock" }}
           paths:
