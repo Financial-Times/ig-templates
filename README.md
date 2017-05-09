@@ -25,3 +25,9 @@ The Handlebars helpers use the [debug](https://github.com/visionmedia/debug) mod
 - [Layouts](src/templates/layouts)
 - [Partials](src/templates/partials)
 - [Client-side JavaScript](src/client)
+
+## Developing in this repo
+
+Set up: clone and run `yarn && bower install`.
+Developing: run `trip develop`
+Publishing: on master, commit all changes then run `npm version patch && git push && git push --tags` (switch `patch` for `minor` or `major` as appropriate)
