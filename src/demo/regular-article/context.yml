@@ -44,3 +44,6 @@ byline:
     url: http://www.example.com/
   - name: Rachel
     url: http://www.example.com/
+
+ads:
+  gptAdunit: ft.com/world/uk

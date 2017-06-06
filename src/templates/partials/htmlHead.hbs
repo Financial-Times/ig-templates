@@ -132,3 +132,15 @@ Boot.scripts = [
   <meta property="ft.track:microsite_name" content="{{ tracking.micrositeName }}"/>
   {{/if}}
 {{/if}}
+
+{{#if ads}}
+<script data-o-ads-config type="application/json">
+{
+ "gpt": {
+   "network": 5887,
+   "adUnit": "{{ ads.gptAdunit }}"
+ },
+ "dfp_targeting": "{{ ads.dftTargeting }}"
+}
+</script>
+{{/if}}

@@ -7,6 +7,10 @@
 <body>
   {{#> bodyStart}}{{/bodyStart}}
 
+  {{#if ads}}
+  {{#> topAdSlot}}{{> leaderboardAd }}{{/topAdSlot}}
+  {{/if}}
+
   {{> pageHeader}}
   <main role="main">
     <article class="graphics-article">
@@ -17,6 +21,11 @@
   </main>
 
 {{> pageFooter }}
+
+{{#if ads}}
+<link rel="stylesheet" href="https://build.origami.ft.com/v2/bundles/css?modules=o-ads@^6.2.1" />
+<script async src="https://build.origami.ft.com/v2/bundles/js?export=oAds&modules=o-ads@^6.2.1"></script>
+{{/if}}
 
 {{#> bodyEnd}}{{/bodyEnd}}
 </body>
