@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-// Generated at 2017-05-09T13:36:57.348Z
+// Generated at 2017-06-06T12:52:05.311Z
 // Do not hand-edit this file. Use "trip updateNav" to redownload it
 // from next-navigation.ft.com.
 
@@ -98,7 +98,7 @@ export default {
                         "items": [
                           {
                             "label": "US Economy",
-                            "url": "/global-economy/us",
+                            "url": "/us-economy",
                             "submenu": null
                           },
                           {
@@ -557,6 +557,11 @@ export default {
                             "submenu": null
                           },
                           {
+                            "label": "Andrew Hill",
+                            "url": "/andrew-hill",
+                            "submenu": null
+                          },
+                          {
                             "label": "Izabella Kaminska",
                             "url": "/izabella-kaminska",
                             "submenu": null
@@ -594,11 +599,6 @@ export default {
                           {
                             "label": "David Pilling",
                             "url": "/comment/columnists/davidpilling",
-                            "submenu": null
-                          },
-                          {
-                            "label": "Lisa Pollack",
-                            "url": "/comment/columnists/lisa-pollack",
                             "submenu": null
                           },
                           {
@@ -1089,7 +1089,7 @@ export default {
                         "items": [
                           {
                             "label": "US Economy",
-                            "url": "/global-economy/us",
+                            "url": "/us-economy",
                             "submenu": null
                           },
                           {
@@ -1165,7 +1165,7 @@ export default {
                   "items": [
                     {
                       "label": "US Economy",
-                      "url": "/global-economy/us",
+                      "url": "/us-economy",
                       "submenu": null
                     },
                     {
@@ -1548,6 +1548,11 @@ export default {
                             "submenu": null
                           },
                           {
+                            "label": "Andrew Hill",
+                            "url": "/andrew-hill",
+                            "submenu": null
+                          },
+                          {
                             "label": "Izabella Kaminska",
                             "url": "/izabella-kaminska",
                             "submenu": null
@@ -1585,11 +1590,6 @@ export default {
                           {
                             "label": "David Pilling",
                             "url": "/comment/columnists/davidpilling",
-                            "submenu": null
-                          },
-                          {
-                            "label": "Lisa Pollack",
-                            "url": "/comment/columnists/lisa-pollack",
                             "submenu": null
                           },
                           {
@@ -2197,6 +2197,11 @@ export default {
                   "label": "Ebooks",
                   "url": "http://www.ft.com/ebooks",
                   "submenu": null
+                },
+                {
+                  "label": "UK Secondary Schools",
+                  "url": "https://enterprise.ft.com/en-gb/secondary-schools/",
+                  "submenu": null
                 }
               ]
             ]
@@ -2254,11 +2259,6 @@ export default {
                 {
                   "label": "Currency Converter",
                   "url": "https://markets.ft.com/research/Markets/Currencies?segid=70113",
-                  "submenu": null
-                },
-                {
-                  "label": "Press Cuttings",
-                  "url": "http://presscuttings.ft.com/presscuttings/search.htm",
                   "submenu": null
                 }
               ]
@@ -2368,7 +2368,7 @@ export default {
                   "items": [
                     {
                       "label": "US Economy",
-                      "url": "/global-economy/us",
+                      "url": "/us-economy",
                       "submenu": null
                     },
                     {
@@ -2483,7 +2483,7 @@ export default {
                       "items": [
                         {
                           "label": "US Economy",
-                          "url": "/global-economy/us",
+                          "url": "/us-economy",
                           "submenu": null
                         },
                         {
@@ -2559,24 +2559,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "French election results: Macron’s victory in charts",
-                  "url": "/content/62d782d6-31a7-11e7-9555-23ef563ecf9a"
+                  "label": "Saudi Arabia, UAE, Bahrain and Egypt cut ties with Qatar",
+                  "url": "/content/dc24473c-499e-11e7-a3f4-c742b9791d43"
                 },
                 {
-                  "label": "British passport applications from EU residents up by a third",
-                  "url": "/content/5cb90646-2ff8-11e7-9555-23ef563ecf9a"
+                  "label": "Eurozone recovery becomes surprise economic story of 2017",
+                  "url": "/content/8db37b0a-46be-11e7-8519-9f94ee97d996"
                 },
                 {
-                  "label": "Trump was warned twice on risk of Russia blackmailing Flynn",
-                  "url": "/content/8880e674-3433-11e7-99bd-13beb0903fa3"
+                  "label": "Star witness James Comey raises White House ghosts",
+                  "url": "/content/8bd1ec76-47eb-11e7-8519-9f94ee97d996"
                 },
                 {
-                  "label": "Macron’s policies on Europe, trade, immigration and defence",
-                  "url": "/content/37223e92-3319-11e7-bce4-9023f8c0fd2e"
+                  "label": "May says ‘enough is enough’ after London Bridge terror attack",
+                  "url": "/content/c663b83c-48a5-11e7-919a-1e14ce4af89b"
                 },
                 {
-                  "label": "Merkel rules out eased eurozone spending rules to help Macron",
-                  "url": "/content/2d3004a2-33ee-11e7-bce4-9023f8c0fd2e"
+                  "label": "Trump criticises London mayor after terrorist attack",
+                  "url": "/content/4dde376a-48ba-11e7-919a-1e14ce4af89b"
                 }
               ]
             }
@@ -2642,24 +2642,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "Warnings of staff relocations after Brexit rise sharply",
-                  "url": "/content/8c4392d6-3409-11e7-bce4-9023f8c0fd2e"
+                  "label": "UK general election 2017 poll tracker",
+                  "url": "/content/403f64b4-2423-11e7-8691-d5f7e0cd0a16"
                 },
                 {
-                  "label": "British passport applications from EU residents up by a third",
-                  "url": "/content/5cb90646-2ff8-11e7-9555-23ef563ecf9a"
+                  "label": "Jeremy Corbyn’s surge: miracle or mirage?",
+                  "url": "/content/304cc976-47ae-11e7-8d27-59b4dd6296b8"
                 },
                 {
-                  "label": "Deep divisions at Labour headquarters hit UK election hopes",
-                  "url": "/content/9db2a95c-30e0-11e7-9555-23ef563ecf9a"
+                  "label": "Facebook, Twitter and Google face criticism following London attack",
+                  "url": "/content/9654602a-493a-11e7-919a-1e14ce4af89b"
                 },
                 {
-                  "label": "May’s foreign policy cannot be judged by its electoral effect",
-                  "url": "/content/330b82c6-33d9-11e7-99bd-13beb0903fa3"
+                  "label": "Police expand east London terror search with more arrests",
+                  "url": "/content/d8c72fd4-49c4-11e7-a3f4-c742b9791d43"
                 },
                 {
-                  "label": "MacKenzie heads for Sun exit as Murdoch’s old guard swept away",
-                  "url": "/content/54c7ecee-33ff-11e7-bce4-9023f8c0fd2e"
+                  "label": "May says ‘enough is enough’ after London Bridge terror attack",
+                  "url": "/content/c663b83c-48a5-11e7-919a-1e14ce4af89b"
                 }
               ]
             }
@@ -3083,24 +3083,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "Goldman shakes up investment bank leadership",
-                  "url": "/content/775f6b7c-340b-11e7-99bd-13beb0903fa3"
+                  "label": "Facebook, Twitter and Google face criticism following London attack",
+                  "url": "/content/9654602a-493a-11e7-919a-1e14ce4af89b"
                 },
                 {
-                  "label": "Warnings of staff relocations after Brexit rise sharply",
-                  "url": "/content/8c4392d6-3409-11e7-bce4-9023f8c0fd2e"
+                  "label": "Boutique advisers crash M&A league table thanks to high fees",
+                  "url": "/content/77dfbabe-471d-11e7-8519-9f94ee97d996"
                 },
                 {
-                  "label": "Brexit process will expose basic weakness in European banking",
-                  "url": "/content/739f9852-3331-11e7-99bd-13beb0903fa3"
+                  "label": "How Goldman changed its ways to boost women at the top",
+                  "url": "/content/51971b96-2f3e-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "Volkswagen plans to ‘leapfrog’ Tesla in electric car race",
-                  "url": "/content/a43ac2ce-3198-11e7-9555-23ef563ecf9a"
+                  "label": "Lawyers warn Saudi Aramco of New York IPO litigation risks",
+                  "url": "/content/d25bc250-491e-11e7-919a-1e14ce4af89b"
                 },
                 {
-                  "label": "ChemChina and Sinochem plan merger",
-                  "url": "/content/08a29238-2ed2-11e7-9555-23ef563ecf9a"
+                  "label": "Toyota sells stake in Tesla as partnership dies",
+                  "url": "/content/130a937a-48fd-11e7-919a-1e14ce4af89b"
                 }
               ]
             }
@@ -3350,24 +3350,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "Risk of dollar shortage hits investors’ radar",
-                  "url": "/content/4ea2e24c-30b2-11e7-9555-23ef563ecf9a"
+                  "label": "Lawyers warn Saudi Aramco of New York IPO litigation risks",
+                  "url": "/content/d25bc250-491e-11e7-919a-1e14ce4af89b"
                 },
                 {
-                  "label": "Opec and Russia poised to roll over oil output cuts",
-                  "url": "/content/9d0c4e06-33d6-11e7-bce4-9023f8c0fd2e"
+                  "label": "Wall Street cautious as oil reverses early rally",
+                  "url": "/content/69b0d216-498e-11e7-a3f4-c742b9791d43"
                 },
                 {
-                  "label": "Italy’s bad debt problem refuses to go away",
-                  "url": "/content/5be3608c-3182-11e7-9555-23ef563ecf9a"
+                  "label": "Fresh doubt raised over Fed rate rise",
+                  "url": "/content/3dc6156c-4952-11e7-a3f4-c742b9791d43"
                 },
                 {
-                  "label": "Euro and stocks slip after French election result",
-                  "url": "/content/bf20f612-338c-11e7-99bd-13beb0903fa3"
+                  "label": "A UK election surprise for investors and the pound this week?",
+                  "url": "/content/aa52cc10-46d8-11e7-8519-9f94ee97d996"
                 },
                 {
-                  "label": "Wall Street’s fear gauge falls to lowest level since 1993",
-                  "url": "/content/456629ce-343a-11e7-bce4-9023f8c0fd2e"
+                  "label": "Bunge hires JPMorgan and Shearman & Sterling in Glencore defence",
+                  "url": "/content/12147fd0-4920-11e7-919a-1e14ce4af89b"
                 }
               ]
             }
@@ -3421,6 +3421,11 @@ export default {
                       "submenu": null
                     },
                     {
+                      "label": "Andrew Hill",
+                      "url": "/andrew-hill",
+                      "submenu": null
+                    },
+                    {
                       "label": "Izabella Kaminska",
                       "url": "/izabella-kaminska",
                       "submenu": null
@@ -3458,11 +3463,6 @@ export default {
                     {
                       "label": "David Pilling",
                       "url": "/comment/columnists/davidpilling",
-                      "submenu": null
-                    },
-                    {
-                      "label": "Lisa Pollack",
-                      "url": "/comment/columnists/lisa-pollack",
                       "submenu": null
                     },
                     {
@@ -3613,6 +3613,11 @@ export default {
                           "submenu": null
                         },
                         {
+                          "label": "Andrew Hill",
+                          "url": "/andrew-hill",
+                          "submenu": null
+                        },
+                        {
                           "label": "Izabella Kaminska",
                           "url": "/izabella-kaminska",
                           "submenu": null
@@ -3650,11 +3655,6 @@ export default {
                         {
                           "label": "David Pilling",
                           "url": "/comment/columnists/davidpilling",
-                          "submenu": null
-                        },
-                        {
-                          "label": "Lisa Pollack",
-                          "url": "/comment/columnists/lisa-pollack",
                           "submenu": null
                         },
                         {
@@ -3761,24 +3761,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "Why Emmanuel Macron matters to the whole world",
-                  "url": "/content/cbbb9a5a-33c6-11e7-bce4-9023f8c0fd2e"
+                  "label": "The chilling effect of a brutally simple style of terror",
+                  "url": "/content/c9713576-4928-11e7-a3f4-c742b9791d43"
                 },
                 {
-                  "label": "May’s foreign policy cannot be judged by its electoral effect",
-                  "url": "/content/330b82c6-33d9-11e7-99bd-13beb0903fa3"
+                  "label": "How winning could mean losing for Theresa May",
+                  "url": "/content/54546e9a-486d-11e7-a3f4-c742b9791d43"
                 },
                 {
-                  "label": "Iraq fears for its future once Isis falls",
-                  "url": "/content/6eedad00-1f66-11e7-a454-ab04428977f9"
+                  "label": "Corbyn has caught the mood of a UK grown tired of austerity",
+                  "url": "/content/3cc15f1e-478b-11e7-8d27-59b4dd6296b8"
                 },
                 {
-                  "label": "The lean and mean approach of 3G Capital",
-                  "url": "/content/268f73e6-31a3-11e7-9555-23ef563ecf9a"
+                  "label": "Business needs to show there is more to the US than Donald Trump",
+                  "url": "/content/b4cb6d92-46b9-11e7-8d27-59b4dd6296b8"
                 },
                 {
-                  "label": "Emmanuel Macron sets his sights on economic and eurozone reforms",
-                  "url": "/content/da3404fc-3365-11e7-bce4-9023f8c0fd2e"
+                  "label": "India Inc walks a banking tightrope",
+                  "url": "/content/b62802e2-4135-11e7-9d56-25f963e998b2"
                 }
               ]
             }
@@ -3882,24 +3882,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "There is nothing cute about innumeracy",
-                  "url": "/content/3174d5ce-30e7-11e7-9555-23ef563ecf9a"
+                  "label": "How Goldman changed its ways to boost women at the top",
+                  "url": "/content/51971b96-2f3e-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "Harvard and its business school acolytes are due a rethink",
-                  "url": "/content/104359b4-3166-11e7-9555-23ef563ecf9a"
+                  "label": "Paul Romer’s ‘and’ quota is a false economy",
+                  "url": "/content/a97491a4-469f-11e7-8d27-59b4dd6296b8"
                 },
                 {
-                  "label": "Why paternal age matters to children’s health",
-                  "url": "/content/bd42df1a-3303-11e7-99bd-13beb0903fa3"
+                  "label": "Arthur Sadoun, Publicis CEO, on advertising’s new age",
+                  "url": "/content/28f88180-45d6-11e7-8519-9f94ee97d996"
                 },
                 {
-                  "label": "Unrealistic expectations put millennials at risk of burnout",
-                  "url": "/content/be3289be-2c3e-11e7-bc4b-5528796fe35c"
+                  "label": "Tech tweaks in just-in-time chains lead to disaster",
+                  "url": "/content/265410f2-461c-11e7-8519-9f94ee97d996"
                 },
                 {
-                  "label": "Artificial intelligence closes in on the work of junior lawyers",
-                  "url": "/content/f809870c-26a1-11e7-8691-d5f7e0cd0a16"
+                  "label": "Ready to think the unthinkable",
+                  "url": "/content/a177caae-397d-11e7-ac89-b01cc67cfeec"
                 }
               ]
             }
@@ -4227,24 +4227,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "The charm of Mme Macron: a little bit of Essex in the Elysée Palace",
-                  "url": "/content/2474c1ca-319d-11e7-9555-23ef563ecf9a"
+                  "label": "How the Bible Belt lost God and found Trump",
+                  "url": "/content/b41d0ee6-1e96-11e7-b7d3-163f5a7f229c"
                 },
                 {
-                  "label": "Did South Park accidentally invent the alt-right?",
-                  "url": "/content/c69fa756-30be-11e7-9555-23ef563ecf9a"
+                  "label": "How the Conservatives made it back: 12 years that changed Britain",
+                  "url": "/content/7a5697fe-4583-11e7-8d27-59b4dd6296b8"
                 },
                 {
-                  "label": "The siege of western liberalism",
-                  "url": "/content/c7444248-3000-11e7-9555-23ef563ecf9a"
+                  "label": "Has science cracked the peanut allergy?",
+                  "url": "/content/682bb942-4583-11e7-8d27-59b4dd6296b8"
                 },
                 {
-                  "label": "What To Do When Machines Do Everything by Malcolm Frank et al, Paul Roehrig, and Ben Pring",
-                  "url": "/content/f4251416-2a76-11e7-bc4b-5528796fe35c"
+                  "label": "Chicago’s Riverwalk: complex, urbane and intriguing",
+                  "url": "/content/16de9bd8-45f9-11e7-8519-9f94ee97d996"
                 },
                 {
-                  "label": "One suitcase, two lives: the rise of the weekly commuter",
-                  "url": "/content/4fd8769c-2f89-11e7-9555-23ef563ecf9a"
+                  "label": "Rigor Mortis by Richard Harris — sloppy science",
+                  "url": "/content/cc8b60ce-4225-11e7-82b6-896b95f30f58"
                 }
               ]
             }
@@ -4303,7 +4303,7 @@ export default {
                   "items": [
                     {
                       "label": "US Economy",
-                      "url": "/global-economy/us",
+                      "url": "/us-economy",
                       "submenu": null
                     },
                     {
@@ -4418,7 +4418,7 @@ export default {
                       "items": [
                         {
                           "label": "US Economy",
-                          "url": "/global-economy/us",
+                          "url": "/us-economy",
                           "submenu": null
                         },
                         {
@@ -4494,24 +4494,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "French election results: Macron’s victory in charts",
-                  "url": "/content/62d782d6-31a7-11e7-9555-23ef563ecf9a"
+                  "label": "Saudi Arabia, UAE, Bahrain and Egypt cut ties with Qatar",
+                  "url": "/content/dc24473c-499e-11e7-a3f4-c742b9791d43"
                 },
                 {
-                  "label": "British passport applications from EU residents up by a third",
-                  "url": "/content/5cb90646-2ff8-11e7-9555-23ef563ecf9a"
+                  "label": "Eurozone recovery becomes surprise economic story of 2017",
+                  "url": "/content/8db37b0a-46be-11e7-8519-9f94ee97d996"
                 },
                 {
-                  "label": "Trump was warned twice on risk of Russia blackmailing Flynn",
-                  "url": "/content/8880e674-3433-11e7-99bd-13beb0903fa3"
+                  "label": "Star witness James Comey raises White House ghosts",
+                  "url": "/content/8bd1ec76-47eb-11e7-8519-9f94ee97d996"
                 },
                 {
-                  "label": "Macron’s policies on Europe, trade, immigration and defence",
-                  "url": "/content/37223e92-3319-11e7-bce4-9023f8c0fd2e"
+                  "label": "May says ‘enough is enough’ after London Bridge terror attack",
+                  "url": "/content/c663b83c-48a5-11e7-919a-1e14ce4af89b"
                 },
                 {
-                  "label": "Merkel rules out eased eurozone spending rules to help Macron",
-                  "url": "/content/2d3004a2-33ee-11e7-bce4-9023f8c0fd2e"
+                  "label": "Trump criticises London mayor after terrorist attack",
+                  "url": "/content/4dde376a-48ba-11e7-919a-1e14ce4af89b"
                 }
               ]
             }
@@ -4525,7 +4525,7 @@ export default {
             "items": [
               {
                 "label": "US Economy",
-                "url": "/global-economy/us",
+                "url": "/us-economy",
                 "submenu": null
               },
               {
@@ -4553,7 +4553,7 @@ export default {
                   },
                   {
                     "label": "US Economy",
-                    "url": "/global-economy/us",
+                    "url": "/us-economy",
                     "submenu": null
                   }
                 ],
@@ -4577,24 +4577,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "Trump was warned twice on risk of Russia blackmailing Flynn",
-                  "url": "/content/8880e674-3433-11e7-99bd-13beb0903fa3"
+                  "label": "Star witness James Comey raises White House ghosts",
+                  "url": "/content/8bd1ec76-47eb-11e7-8519-9f94ee97d996"
                 },
                 {
-                  "label": "Trump visa crackdown spurs tech moves to Mexico",
-                  "url": "/content/7d8e3a2e-302c-11e7-9555-23ef563ecf9a"
+                  "label": "Fresh doubt raised over Fed rate rise",
+                  "url": "/content/3dc6156c-4952-11e7-a3f4-c742b9791d43"
                 },
                 {
-                  "label": "Duterte plays cat-and-mouse game with US and China",
-                  "url": "/content/4375d4ee-340c-11e7-bce4-9023f8c0fd2e"
+                  "label": "Business needs to show there is more to the US than Donald Trump",
+                  "url": "/content/b4cb6d92-46b9-11e7-8d27-59b4dd6296b8"
                 },
                 {
-                  "label": "Foreign students shun US over Trump",
-                  "url": "/content/eba11d8a-319c-11e7-9555-23ef563ecf9a"
+                  "label": "US states form alliance to meet Paris climate commitments",
+                  "url": "/content/27c5bad2-4895-11e7-919a-1e14ce4af89b"
                 },
                 {
-                  "label": "Less is more when it comes to Federal Reserve policy",
-                  "url": "/content/ab77d236-318c-11e7-9555-23ef563ecf9a"
+                  "label": "Trump pushes for ‘much tougher’ travel ban from six Muslim countries",
+                  "url": "/content/0400aac2-d241-3dd9-8f46-17a7d21347ab"
                 }
               ]
             }
@@ -5018,24 +5018,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "Goldman shakes up investment bank leadership",
-                  "url": "/content/775f6b7c-340b-11e7-99bd-13beb0903fa3"
+                  "label": "Facebook, Twitter and Google face criticism following London attack",
+                  "url": "/content/9654602a-493a-11e7-919a-1e14ce4af89b"
                 },
                 {
-                  "label": "Warnings of staff relocations after Brexit rise sharply",
-                  "url": "/content/8c4392d6-3409-11e7-bce4-9023f8c0fd2e"
+                  "label": "Boutique advisers crash M&A league table thanks to high fees",
+                  "url": "/content/77dfbabe-471d-11e7-8519-9f94ee97d996"
                 },
                 {
-                  "label": "Brexit process will expose basic weakness in European banking",
-                  "url": "/content/739f9852-3331-11e7-99bd-13beb0903fa3"
+                  "label": "How Goldman changed its ways to boost women at the top",
+                  "url": "/content/51971b96-2f3e-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "Volkswagen plans to ‘leapfrog’ Tesla in electric car race",
-                  "url": "/content/a43ac2ce-3198-11e7-9555-23ef563ecf9a"
+                  "label": "Lawyers warn Saudi Aramco of New York IPO litigation risks",
+                  "url": "/content/d25bc250-491e-11e7-919a-1e14ce4af89b"
                 },
                 {
-                  "label": "ChemChina and Sinochem plan merger",
-                  "url": "/content/08a29238-2ed2-11e7-9555-23ef563ecf9a"
+                  "label": "Toyota sells stake in Tesla as partnership dies",
+                  "url": "/content/130a937a-48fd-11e7-919a-1e14ce4af89b"
                 }
               ]
             }
@@ -5285,24 +5285,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "Risk of dollar shortage hits investors’ radar",
-                  "url": "/content/4ea2e24c-30b2-11e7-9555-23ef563ecf9a"
+                  "label": "Lawyers warn Saudi Aramco of New York IPO litigation risks",
+                  "url": "/content/d25bc250-491e-11e7-919a-1e14ce4af89b"
                 },
                 {
-                  "label": "Opec and Russia poised to roll over oil output cuts",
-                  "url": "/content/9d0c4e06-33d6-11e7-bce4-9023f8c0fd2e"
+                  "label": "Wall Street cautious as oil reverses early rally",
+                  "url": "/content/69b0d216-498e-11e7-a3f4-c742b9791d43"
                 },
                 {
-                  "label": "Italy’s bad debt problem refuses to go away",
-                  "url": "/content/5be3608c-3182-11e7-9555-23ef563ecf9a"
+                  "label": "Fresh doubt raised over Fed rate rise",
+                  "url": "/content/3dc6156c-4952-11e7-a3f4-c742b9791d43"
                 },
                 {
-                  "label": "Euro and stocks slip after French election result",
-                  "url": "/content/bf20f612-338c-11e7-99bd-13beb0903fa3"
+                  "label": "A UK election surprise for investors and the pound this week?",
+                  "url": "/content/aa52cc10-46d8-11e7-8519-9f94ee97d996"
                 },
                 {
-                  "label": "Wall Street’s fear gauge falls to lowest level since 1993",
-                  "url": "/content/456629ce-343a-11e7-bce4-9023f8c0fd2e"
+                  "label": "Bunge hires JPMorgan and Shearman & Sterling in Glencore defence",
+                  "url": "/content/12147fd0-4920-11e7-919a-1e14ce4af89b"
                 }
               ]
             }
@@ -5356,6 +5356,11 @@ export default {
                       "submenu": null
                     },
                     {
+                      "label": "Andrew Hill",
+                      "url": "/andrew-hill",
+                      "submenu": null
+                    },
+                    {
                       "label": "Izabella Kaminska",
                       "url": "/izabella-kaminska",
                       "submenu": null
@@ -5393,11 +5398,6 @@ export default {
                     {
                       "label": "David Pilling",
                       "url": "/comment/columnists/davidpilling",
-                      "submenu": null
-                    },
-                    {
-                      "label": "Lisa Pollack",
-                      "url": "/comment/columnists/lisa-pollack",
                       "submenu": null
                     },
                     {
@@ -5548,6 +5548,11 @@ export default {
                           "submenu": null
                         },
                         {
+                          "label": "Andrew Hill",
+                          "url": "/andrew-hill",
+                          "submenu": null
+                        },
+                        {
                           "label": "Izabella Kaminska",
                           "url": "/izabella-kaminska",
                           "submenu": null
@@ -5585,11 +5590,6 @@ export default {
                         {
                           "label": "David Pilling",
                           "url": "/comment/columnists/davidpilling",
-                          "submenu": null
-                        },
-                        {
-                          "label": "Lisa Pollack",
-                          "url": "/comment/columnists/lisa-pollack",
                           "submenu": null
                         },
                         {
@@ -5696,24 +5696,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "Why Emmanuel Macron matters to the whole world",
-                  "url": "/content/cbbb9a5a-33c6-11e7-bce4-9023f8c0fd2e"
+                  "label": "The chilling effect of a brutally simple style of terror",
+                  "url": "/content/c9713576-4928-11e7-a3f4-c742b9791d43"
                 },
                 {
-                  "label": "May’s foreign policy cannot be judged by its electoral effect",
-                  "url": "/content/330b82c6-33d9-11e7-99bd-13beb0903fa3"
+                  "label": "How winning could mean losing for Theresa May",
+                  "url": "/content/54546e9a-486d-11e7-a3f4-c742b9791d43"
                 },
                 {
-                  "label": "Iraq fears for its future once Isis falls",
-                  "url": "/content/6eedad00-1f66-11e7-a454-ab04428977f9"
+                  "label": "Corbyn has caught the mood of a UK grown tired of austerity",
+                  "url": "/content/3cc15f1e-478b-11e7-8d27-59b4dd6296b8"
                 },
                 {
-                  "label": "The lean and mean approach of 3G Capital",
-                  "url": "/content/268f73e6-31a3-11e7-9555-23ef563ecf9a"
+                  "label": "Business needs to show there is more to the US than Donald Trump",
+                  "url": "/content/b4cb6d92-46b9-11e7-8d27-59b4dd6296b8"
                 },
                 {
-                  "label": "Emmanuel Macron sets his sights on economic and eurozone reforms",
-                  "url": "/content/da3404fc-3365-11e7-bce4-9023f8c0fd2e"
+                  "label": "India Inc walks a banking tightrope",
+                  "url": "/content/b62802e2-4135-11e7-9d56-25f963e998b2"
                 }
               ]
             }
@@ -5817,24 +5817,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "There is nothing cute about innumeracy",
-                  "url": "/content/3174d5ce-30e7-11e7-9555-23ef563ecf9a"
+                  "label": "How Goldman changed its ways to boost women at the top",
+                  "url": "/content/51971b96-2f3e-11e7-9555-23ef563ecf9a"
                 },
                 {
-                  "label": "Harvard and its business school acolytes are due a rethink",
-                  "url": "/content/104359b4-3166-11e7-9555-23ef563ecf9a"
+                  "label": "Paul Romer’s ‘and’ quota is a false economy",
+                  "url": "/content/a97491a4-469f-11e7-8d27-59b4dd6296b8"
                 },
                 {
-                  "label": "Why paternal age matters to children’s health",
-                  "url": "/content/bd42df1a-3303-11e7-99bd-13beb0903fa3"
+                  "label": "Arthur Sadoun, Publicis CEO, on advertising’s new age",
+                  "url": "/content/28f88180-45d6-11e7-8519-9f94ee97d996"
                 },
                 {
-                  "label": "Unrealistic expectations put millennials at risk of burnout",
-                  "url": "/content/be3289be-2c3e-11e7-bc4b-5528796fe35c"
+                  "label": "Tech tweaks in just-in-time chains lead to disaster",
+                  "url": "/content/265410f2-461c-11e7-8519-9f94ee97d996"
                 },
                 {
-                  "label": "Artificial intelligence closes in on the work of junior lawyers",
-                  "url": "/content/f809870c-26a1-11e7-8691-d5f7e0cd0a16"
+                  "label": "Ready to think the unthinkable",
+                  "url": "/content/a177caae-397d-11e7-ac89-b01cc67cfeec"
                 }
               ]
             }
@@ -6162,24 +6162,24 @@ export default {
               "title": "Most Read",
               "data": [
                 {
-                  "label": "The charm of Mme Macron: a little bit of Essex in the Elysée Palace",
-                  "url": "/content/2474c1ca-319d-11e7-9555-23ef563ecf9a"
+                  "label": "How the Bible Belt lost God and found Trump",
+                  "url": "/content/b41d0ee6-1e96-11e7-b7d3-163f5a7f229c"
                 },
                 {
-                  "label": "Did South Park accidentally invent the alt-right?",
-                  "url": "/content/c69fa756-30be-11e7-9555-23ef563ecf9a"
+                  "label": "How the Conservatives made it back: 12 years that changed Britain",
+                  "url": "/content/7a5697fe-4583-11e7-8d27-59b4dd6296b8"
                 },
                 {
-                  "label": "The siege of western liberalism",
-                  "url": "/content/c7444248-3000-11e7-9555-23ef563ecf9a"
+                  "label": "Has science cracked the peanut allergy?",
+                  "url": "/content/682bb942-4583-11e7-8d27-59b4dd6296b8"
                 },
                 {
-                  "label": "What To Do When Machines Do Everything by Malcolm Frank et al, Paul Roehrig, and Ben Pring",
-                  "url": "/content/f4251416-2a76-11e7-bc4b-5528796fe35c"
+                  "label": "Chicago’s Riverwalk: complex, urbane and intriguing",
+                  "url": "/content/16de9bd8-45f9-11e7-8519-9f94ee97d996"
                 },
                 {
-                  "label": "One suitcase, two lives: the rise of the weekly commuter",
-                  "url": "/content/4fd8769c-2f89-11e7-9555-23ef563ecf9a"
+                  "label": "Rigor Mortis by Richard Harris — sloppy science",
+                  "url": "/content/cc8b60ce-4225-11e7-82b6-896b95f30f58"
                 }
               ]
             }
