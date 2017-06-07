@@ -61,3 +61,9 @@ social:
 
 ads:
   gptAdunit: ft.com/world/uk
+
+enableTracking: true
+tracking:
+  googleAnalytics: UA-35229645-8 # this is the IG test account
+
+enableErrorReporting: true
