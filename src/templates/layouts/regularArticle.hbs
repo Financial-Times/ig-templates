@@ -6,7 +6,7 @@
 
 <body>
   {{#> bodyStart}}{{/bodyStart}}
-  
+
   {{#if ads}}
   {{#> topAdSlot}}{{> leaderboardAd }}{{/topAdSlot}}
   {{/if}}
@@ -95,7 +95,7 @@
       </div>
     </article>
   </main>
-
+{{#if comments}}
   <div class="o-grid-container comments-container">
     <div class="o-grid-row">
       <div data-o-grid-colspan="12 L8 XLoffset1">
@@ -103,6 +103,7 @@
       </div>
     </div>
   </div>
+{{/if}}
 
 {{!-- TODO onward journey etc --}}
 
