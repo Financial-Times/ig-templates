@@ -47,3 +47,8 @@ byline:
 
 ads:
   gptAdunit: ft.com/world/uk
+
+enableAnalytics: true
+tracking:
+  product: IG
+  googleAnalytics: UA-35229645-8 # this is the IG test account

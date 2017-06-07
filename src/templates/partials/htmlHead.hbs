@@ -19,9 +19,7 @@ Boot.scripts = [
 </script>
 
 {{#if bootJS}}
-<script>
-{{{includeFromFramework bootJS}}}
-</script>
+<script>{{{includeFromFramework bootJS}}}</script>
 {{/if}}
 
 {{#if criticalCSS}}
@@ -124,8 +122,6 @@ Boot.scripts = [
   <link rel="preconnect" href="https://spoor-api.ft.com">
   <meta property="ft.track:is_live" content="true"/>
 
-  <script async src="https://origami-build.ft.com/v2/bundles/js?export=oTracking&modules=o-tracking@^1.2.3"></script>
-
   {{#if tracking.product}}
   <meta property="ft.track:product" content="{{ tracking.product }}"/>
   {{/if}}
@@ -133,7 +129,7 @@ Boot.scripts = [
   {{#if tracking.micrositeName}}
   <meta property="ft.track:microsite_name" content="{{ tracking.micrositeName }}"/>
   {{/if}}
-  
+
   {{#if tracking.googleAnalytics}}
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -144,6 +140,10 @@ Boot.scripts = [
     ga('require','displayfeatures');
     ga('send', 'pageview');
   </script>
+  {{/if}}
+
+  {{#if bootJS}}
+  <script>{{{includeFromFramework 'client/tracking.main.js'}}}</script>
   {{/if}}
 {{/if}}
 

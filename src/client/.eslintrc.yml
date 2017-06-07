@@ -1,2 +1,5 @@
 env:
   browser: true
+globals:
+  Boot: true
+  oTracking: true
