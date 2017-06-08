@@ -113,7 +113,7 @@ if (cutsTheMustard) {
 
   // add polyfill service
   Boot.addScript(
-    'https://cdn.polyfill.io/v2/polyfill.min.js?features=default',
+    'https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch,Symbol',
     undefined,
     () => {
       Boot.fireCondition('polyfill-service');
